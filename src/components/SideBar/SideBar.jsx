@@ -13,7 +13,7 @@ const SideBar = () => {
   const lastWord = currentPath.split("/").filter(Boolean).pop();
   const [activeSection, setActiveSection] = useState(lastWord || "");
   return (
-    <div className="flex flex-col z-[10]  items-center justify-center shadow-right text-gray-500 fixed w-48">
+    <div className="flex flex-col z-[10] items-center justify-center shadow-right text-gray-500 fixed w-48 ">
       <div className=" w-full text-center  relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 text-center opacity-60"></div>
@@ -21,9 +21,10 @@ const SideBar = () => {
           <h1 className=" absolute bottom-3 left-10 text-white">Shantanu</h1>
         </div>
       </div>
-      <div className="flex flex-col bg-black w-full h-screen  ">
+      
+      <div className="flex flex-col  w-full h-screen bg-opacity-20 backdrop-filter backdrop-blur-md  border border-gray-100 ">
         {portfolioUrls.map((menuItem, index) => (
-          <div className="border-b border-[#202226] text-[#717172]">
+          <div className="border-b border-[#202226] text-[#717172] ">
             <Link
               to={`/${menuItem.route}`}
               key={index}
@@ -31,7 +32,7 @@ const SideBar = () => {
                 setActiveSection((old) => menuItem.route);
               }}
             >
-              <div className="flex gap-2 items-center justify-start px-8 mb-1 relative w-full py-3 ">
+              <div className="flex gap-2 items-center justify-start px-8 mb-1  relative w-full py-3 ">
                 {activeSection === menuItem.route && (
                   <div className="h-3 w-3 absolute left-3">
                     <img src={active} alt="" />
