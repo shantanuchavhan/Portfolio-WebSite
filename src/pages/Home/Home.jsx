@@ -11,7 +11,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 3, ease: "easeInOut" }}  
         >
-        <div className="absolute inset-0 bg-black z-[-1] opacity-75 h-full">
+        <div className="fixed inset-0 bg-black z-[-1] opacity-75 h-full">
         </div>
         
         </motion.div>
