@@ -1,8 +1,10 @@
 import React from 'react'
 import AboutmeIcon from "../../images/profile.png"
+import bg from "../../images/pexels-pixabay-326333.jpg"
+import { motion } from 'framer-motion'
 const AbouteMe = () => {
   return (
-    <div className='flex flex-col h-screen p-8 bg-[#2C2D2F] text-white'>
+    <div className='relative flex flex-col h-screen p-8  text-white '>
       <div className='flex justify-between items-end pl-3 h-1/6 border-b border-dotted border-[#f8fee9] p-4'>
         <h1 className='text-4xl m-2'>About me</h1>
         <div>
@@ -21,6 +23,9 @@ const AbouteMe = () => {
             <div>
             </div>
         </div>
+      </div>
+      <div className='absolute top-0 left-0 z-[-1] w-screen '>
+        <img  src={bg} alt="" />
       </div>
     </div>
   )
