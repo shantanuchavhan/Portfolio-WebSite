@@ -42,7 +42,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
+      <div className="fixed z-[-3] top-0  h-screen ">
         <video
           autoPlay
           muted

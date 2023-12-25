@@ -44,7 +44,7 @@ const AbouteMe = () => {
               </div>
               <div className='flex gap-2'>
                 <h1>Address:</h1>
-                <h3 className='text-gray-400'>Mahavir Paradise phase-3, forest Naka, Ambernath</h3>
+                <h3 className='text-gray-400'>Mahavir Paradise phase-3, forest Naka, Ambernath(w)</h3>
               </div>
               <div className='flex gap-2'>
                 <h1>Email:</h1>
