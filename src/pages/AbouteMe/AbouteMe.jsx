@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header'
 import { motion } from 'framer-motion'
 const AbouteMe = () => {
   return (
-    <div className='relative flex flex-col h-screen   text-white '>
+    <div className='relative flex flex-col h-screen p-8  text-white '>
       <motion.div
         initial={{ opacity: 0, x: 0}}
         animate={{ opacity: 1, x: 0 }}

@@ -3,7 +3,7 @@ import Icon from "../../images/cv.png"
 import Header from "../../components/Header/Header";
 import { motion } from "framer-motion";
 const Resume = () => {
-  return <div >
+  return <div className="p-8 ">
     <motion.div
     initial={{ opacity: 0, x: 0}}
     animate={{ opacity: 1, x: 0 }}

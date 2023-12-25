@@ -9,7 +9,7 @@ const HomeLayout = () => {
         <SideBar />
       </div>
       <div className="w-full ">
-        <div className="text-white p-8">
+        <div className="text-white">
           <Outlet />
         </div>
       </div>

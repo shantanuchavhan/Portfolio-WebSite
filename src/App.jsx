@@ -13,7 +13,7 @@ import HomeLayout from "./components/HomeLayout/HomeLayout";
 
 function App() {
   return (
-    <div className="App w-screen  overflow-x-hidden">
+    <div className="App w-screen ">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeLayout />}>
