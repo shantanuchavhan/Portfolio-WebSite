@@ -8,7 +8,7 @@ const HomeLayout = () => {
       <div className="hidden lg:block w-48 shadow-lg">
         <SideBar />
       </div>
-      <div className="flex-grow">
+      <div className="w-5/6">
         <div className="">
           <Outlet />
         </div>
