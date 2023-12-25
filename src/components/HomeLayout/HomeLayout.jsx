@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 const HomeLayout = () => {
   return (
     <div className="flex">
-      <div className="hidden lg:block w-48 shadow-lg">
+      <div className="hidden lg:block w-60 shadow-lg">
         <SideBar />
       </div>
-      <div className="w-5/6">
+      <div className="w-full ">
         <div className="">
           <Outlet />
         </div>
