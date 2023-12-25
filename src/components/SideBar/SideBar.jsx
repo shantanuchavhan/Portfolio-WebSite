@@ -16,9 +16,9 @@ const SideBar = () => {
     <div className="flex flex-col z-[10] items-center justify-center shadow-right text-gray-500 fixed w-1/6 border-r-1 border-color-wheat ">
          <div className=" w-full text-center  relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
-        <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 text-center opacity-60"></div>
-        <div>
-          <h1 className=" absolute bottom-3 left-10 text-white">Shantanu</h1>
+        
+        <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
+          <h1 className=" absolute bottom-3 text-white">Shantanu</h1>
         </div>
       </div>
       
