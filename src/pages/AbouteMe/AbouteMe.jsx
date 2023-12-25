@@ -4,14 +4,14 @@ import Header from '../../components/Header/Header'
 import { motion } from 'framer-motion'
 const AbouteMe = () => {
   return (
-    <div className='relative flex flex-col h-screen    '>
+    <div className='relative flex flex-col h-screen   text-white '>
       <motion.div
         initial={{ opacity: 0, x: 0}}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 3, ease: "easeInOut" }}  
       
       >
-      <div className=''>
+      <div >
       <Header Icon={AboutmeIcon} sectonName={"Aboute Me"}/>
       <div className='flex justify-between gap-10 pt-6   h-5/6 '>
         <div className=' w-3/5  text-start pl-3'>
