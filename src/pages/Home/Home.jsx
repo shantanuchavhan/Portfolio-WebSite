@@ -18,7 +18,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0, color: "wheat" }}
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
         >
-          <h1 className="  text-[43px] bg-transparent">Shantanu chavhan</h1>
+          <h1 className=" text-[43px] bg-transparent">Shantanu chavhan</h1>
           <motion.div
             initial={{ opacity: 0, y: 100, color: "white" }}
             animate={{ opacity: 1, y: 0, color: "white" }}
@@ -40,7 +40,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
+      <div className="fixed z-1 top-0 left-0 w-full h-screen ">
         <video
           autoPlay
           muted

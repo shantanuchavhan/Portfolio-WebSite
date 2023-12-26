@@ -36,7 +36,7 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-hidden fixed top-0 left-0  bottom-0   shadow-lg`}
+        }  lg:block w-60 z-12 overflow-hidden fixed top-0 left-0  bottom-0   shadow-lg`}
       >
         <SideBar setIsOpen={setIsOpen} />
       </div>
@@ -46,7 +46,7 @@ const HomeLayout = () => {
           
         >
           {isOpen && (
-            <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
+            <div className="fixed inset-0 bg-black z-10 opacity-75  min-h-screen"></div>
           )}
           <Outlet />
         </div>
