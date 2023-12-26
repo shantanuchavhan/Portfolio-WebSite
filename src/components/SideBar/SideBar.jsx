@@ -50,14 +50,12 @@ const SideBar = ({ setIsOpen }) => {
   };
 
   return (
-    <motion.div
-      initial={{ width: "0%", x: 0 }}
-      animate={{ width: "100%", x: 0 }}
-      transition={{ duration: 3, ease: "easeInOut" }}
+    <div
+      
       className="flex flex-col min-h-screen  bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
-      <div>
+      <div >
         <div className="text-center relative">
           <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
           <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
@@ -109,7 +107,7 @@ const SideBar = ({ setIsOpen }) => {
             </a>
           ))}
         </div>
-    </motion.div>
+    </div>
   );
 };
 
