@@ -40,7 +40,7 @@ const HomeLayout = () => {
       >
         <SideBar />
       </div>
-      <div className="w-full z-1 ">
+      <div className="w-full z-1 overflow-scroll">
         <div className="text-white">
           <Outlet />
         </div>
