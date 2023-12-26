@@ -57,7 +57,7 @@ const SideBar = ({ setIsOpen }) => {
       className="flex flex-col fixed top-0  bottom-0      items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
-      <div className="w-full   text-center relative">
+      <div className="text-center relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
           <h1 className="absolute bottom-3 text-white">Shantanu c </h1>
