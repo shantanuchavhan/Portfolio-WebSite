@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState,useEffect} from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 
@@ -26,21 +26,17 @@ const HomeLayout = () => {
   return (
     <div className="flex">
       <div
-        className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
-        <div className="line h-1 w-6 bg-white my-1"></div>
-        <div className="line h-1 w-6 bg-gray-700 my-1"></div>
-        <div className="line h-1 w-6 bg-gray-700 my-1"></div>
-      </div>
-      <div
-        className={`${
-          isOpen ? "block fixed top-0" : "hidden overflow-auto  w-1/6"
-        }  lg:block w-60 z-10   shadow-lg`}
-      >
+      className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
+      onClick={toggleMenu}
+    >
+      <div className="line h-1 w-6 bg-white my-1"></div>
+      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
+      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
+    </div>
+      <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60 z-10   shadow-lg`}>
         <SideBar />
       </div>
-      <div className=" z-1 overflow-y-scroll">
+      <div className="w-full z-1  overflow-hidden">
         <div className="text-white">
           <Outlet />
         </div>
