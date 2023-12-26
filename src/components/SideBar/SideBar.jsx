@@ -59,7 +59,7 @@ const SideBar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col  w-full h-screen bg-opacity-20 backdrop-filter backdrop-blur-md">
+      <div className="flex flex-col  w-full h-screen overflow-scroll bg-opacity-20 backdrop-filter backdrop-blur-md">
         {portfolioUrls.map((menuItem, index) => (
           <div className="border-b border-[#202226] text-[#717172] ">
             <Link
