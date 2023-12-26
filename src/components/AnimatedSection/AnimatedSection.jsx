@@ -5,7 +5,7 @@ import { useSideBarContext } from "../../context/SideBarProvider";
 
 
 const AnimatedSection = ({ Icon, sectionName, children }) => {
-  const {isOpen, setIsOpen} = useSideBarContext ();
+  const { setIsOpen} = useSideBarContext ();
   useEffect(()=>{
     
       setIsOpen((old)=>false)
