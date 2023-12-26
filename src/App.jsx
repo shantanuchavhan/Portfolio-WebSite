@@ -13,7 +13,7 @@ import HomeLayout from "./components/HomeLayout/HomeLayout";
 
 function App() {
   return (
-    <div className="App w-screen   h-screen">
+    <div className="App w-screen relative   h-screen">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeLayout />}>
@@ -29,7 +29,7 @@ function App() {
       <div className="fixed top-0 opacity-75  left-0 z-[-10]">
         <img className="object-cover h-screen w-screen" src={bg} alt="" />
       </div>
-      <div className="fixed inset-0 bg-black z-[-1] opacity-30 h-full"></div>
+      <div className="absolute top-0 inset-0 bg-black z-[-1] opacity-30 h-full"></div>
     </div>
   );
 }
