@@ -11,11 +11,31 @@ import youtubeIcon from "../../images/youtube.png";
 import twitterIcon from "../../images/twitter.png";
 
 const socialMediaIcons = [
-  { link: "https://github.com/shantanuchavhan", icon: githubIcon, size: "h-4 w-4" },
-  { link: "https://www.linkedin.com/in/shantanu-chavhan-2b89b3164/", icon: linkdinIcon, size: "h-4 w-4" },
-  { link: "https://www.youtube.com/channel/UCUKhXtdccE76cl97ZAzPIgA", icon: youtubeIcon, size: "h-5 w-5" },
-  { link: "https://twitter.com/6557Chavhan/", icon: twitterIcon, size: "h-5 w-5" },
-  { link: "https://www.hackerrank.com/dashboard", icon: hackerrankIcon, size: "h-5 w-5" },
+  {
+    link: "https://github.com/shantanuchavhan",
+    icon: githubIcon,
+    size: "h-4 w-4",
+  },
+  {
+    link: "https://www.linkedin.com/in/shantanu-chavhan-2b89b3164/",
+    icon: linkdinIcon,
+    size: "h-4 w-4",
+  },
+  {
+    link: "https://www.youtube.com/channel/UCUKhXtdccE76cl97ZAzPIgA",
+    icon: youtubeIcon,
+    size: "h-5 w-5",
+  },
+  {
+    link: "https://twitter.com/6557Chavhan/",
+    icon: twitterIcon,
+    size: "h-5 w-5",
+  },
+  {
+    link: "https://www.hackerrank.com/dashboard",
+    icon: hackerrankIcon,
+    size: "h-5 w-5",
+  },
 ];
 
 const SideBar = ({ setIsOpen }) => {
@@ -34,10 +54,10 @@ const SideBar = ({ setIsOpen }) => {
       initial={{ width: "0%", x: 0 }}
       animate={{ width: "100%", x: 0 }}
       transition={{ duration: 3, ease: "easeInOut" }}
-      className="flex flex-col min-h-screen  items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
+      className="flex flex-col   items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
-      <div className="w-full absolute top-0  text-center relative">
+      <div className="w-full   text-center relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
           <h1 className="absolute bottom-3 text-white">Shantanu c </h1>
@@ -47,7 +67,11 @@ const SideBar = ({ setIsOpen }) => {
       {/* Navigation Links */}
       <div className="flex flex-col w-full overflow-scroll bg-opacity-20 backdrop-filter backdrop-blur-md">
         {portfolioUrls.map((menuItem) => (
-          <Link to={`/${menuItem.route}`} key={menuItem.route} onClick={() => handleLinkClick(menuItem)}>
+          <Link
+            to={`/${menuItem.route}`}
+            key={menuItem.route}
+            onClick={() => handleLinkClick(menuItem)}
+          >
             <div className="border-b border-[#202226] text-[#717172]">
               <div className="flex gap-2 items-center justify-start px-8 mb-1 relative w-full py-3">
                 {activeSection === menuItem.route && (
@@ -65,7 +89,7 @@ const SideBar = ({ setIsOpen }) => {
         ))}
 
         {/* Social Media Icons */}
-        <div className="flex absolute bottom-3 left-3 gap-3 items-center px-8 py-4">
+        <div className="flex  gap-3 items-center px-8 py-4">
           {socialMediaIcons.map((item, index) => (
             <a
               key={index}

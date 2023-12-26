@@ -29,7 +29,7 @@ function App() {
       <div className="fixed top-0 opacity-75  left-0 z-[-10]">
         <img className="object-cover h-screen w-screen" src={bg} alt="" />
       </div>
-      <div className=" bg-black z-[-1] opacity-30 h-full min-h-screen bg-cover bg-center w-screen fixed inset-0 "></div>
+      <div className=" bg-black z-[-1] opacity-30 h-full min-h-screen bg-cover bg-center w-screen fixed  top-0 bottom-0"></div>
     </div>
   );
 }

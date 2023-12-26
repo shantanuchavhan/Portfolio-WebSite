@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 
@@ -26,23 +26,28 @@ const HomeLayout = () => {
   return (
     <div className="flex">
       <div
-      className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
-      onClick={toggleMenu}
-    >
-      <div className="line h-1 w-6 bg-white my-1"></div>
-      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
-      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
-    </div>
-      <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60 z-10 overflow-hidden   shadow-lg`}>
-        <SideBar />
+        className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
+        <div className="line h-1 w-6 bg-white my-1"></div>
+        <div className="line h-1 w-6 bg-gray-700 my-1"></div>
+        <div className="line h-1 w-6 bg-gray-700 my-1"></div>
       </div>
-      <div className="w-full z-1" >
-  <div className="text-white" style={{ overflow: 'scroll' }}>
-  {isOpen && (<div className="fixed inset-0 bg-black z-8 opacity-75 h-full"></div>)}
-    <Outlet />
-  </div>
-</div>
-
+      <div
+        className={`${
+          isOpen ? "block " : "hidden  w-1/6"
+        }  lg:block w-60 z-10 overflow-hidden fixed top-0  bottom-0   shadow-lg`}
+      >
+        <SideBar setIsOpen={setIsOpen} />
+      </div>
+      <div className="w-full z-1 lg:ml-48">
+        <div className="text-white " style={{ overflow: "scroll" }}>
+          {isOpen && (
+            <div className="fixed inset-0 bg-black z-8 opacity-75 h-full"></div>
+          )}
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };
