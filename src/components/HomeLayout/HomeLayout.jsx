@@ -36,11 +36,12 @@ const HomeLayout = () => {
       <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60 z-10 overflow-hidden   shadow-lg`}>
         <SideBar />
       </div>
-      <div className="w-full z-1  overflow-scroll">
-        <div className="text-white">
-          <Outlet />
-        </div>
-      </div>
+      <div className="w-full z-1" style={{ overflow: 'scroll' }}>
+  <div className="text-white">
+    <Outlet />
+  </div>
+</div>
+
     </div>
   );
 };
