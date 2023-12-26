@@ -1,7 +1,7 @@
 import React from 'react'
 import Icon from "../../images/profile.png"
-import Header from '../../components/Header/Header'
-import { motion } from 'framer-motion'
+
+
 import AnimatedSection from '../../components/AnimatedSection/AnimatedSection'
 const AbouteMe = () => {
   return (
