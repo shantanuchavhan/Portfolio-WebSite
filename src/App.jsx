@@ -27,7 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <div className="fixed top-0 opacity-75  left-0 z-[-10]">
-        <img src={bg} alt="" />
+        <img className="object-cover h-screen w-screen" src={bg} alt="" />
       </div>
       <div className="fixed inset-0 bg-black z-[-1] opacity-30 h-full"></div>
     </div>
