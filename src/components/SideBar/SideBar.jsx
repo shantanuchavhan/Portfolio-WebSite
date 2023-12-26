@@ -54,9 +54,10 @@ const SideBar = ({ setIsOpen }) => {
       initial={{ width: "0%", x: 0 }}
       animate={{ width: "100%", x: 0 }}
       transition={{ duration: 3, ease: "easeInOut" }}
-      className="flex flex-col      items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
+      className="flex flex-col      items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
+      <div>
       <div className="text-center relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
@@ -88,6 +89,7 @@ const SideBar = ({ setIsOpen }) => {
           </Link>
         ))}
 
+      </div>
         {/* Social Media Icons */}
         <div className="flex gap-3 items-center px-8 py-4">
           {socialMediaIcons.map((item, index) => (
