@@ -7,9 +7,9 @@ import { useSideBarContext } from "../../context/SideBarProvider";
 const AnimatedSection = ({ Icon, sectionName, children }) => {
   const {isOpen, setIsOpen} = useSideBarContext ();
   useEffect(()=>{
-      if(isOpen){
-        setIsOpen((old)=>false)
-      }
+    
+      setIsOpen((old)=>false)
+      
   },[setIsOpen])
   return (
     <div className=" p-8 text-white  min-h-screen">
