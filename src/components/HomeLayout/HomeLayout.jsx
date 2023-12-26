@@ -1,11 +1,39 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 
 const HomeLayout = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="flex">
-      <div className="hidden lg:block w-60 shadow-lg">
+      <div
+      className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
+      onClick={toggleMenu}
+    >
+      <div className="line h-1 w-6 bg-white my-1"></div>
+      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
+      <div className="line h-1 w-6 bg-gray-700 my-1"></div>
+    </div>
+      <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60   shadow-lg`}>
         <SideBar />
       </div>
       <div className="w-full ">
