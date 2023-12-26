@@ -58,40 +58,41 @@ const SideBar = ({ setIsOpen }) => {
     >
       {/* Profile Image and Name */}
       <div>
-      <div className="text-center relative">
-        <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
-        <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
-          <h1 className="absolute bottom-3 text-white">Shantanu c </h1>
+        <div className="text-center relative">
+          <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
+          <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
+            <h1 className="absolute bottom-3 text-white">Shantanu c </h1>
+          </div>
         </div>
-      </div>
 
-      {/* Navigation Links */}
-      <div className="flex flex-col w-full   overflow-scroll scrollbar-none bg-opacity-20 backdrop-filter backdrop-blur-md">
-        {portfolioUrls.map((menuItem) => (
-          <Link
-            to={`/${menuItem.route}`}
-            key={menuItem.route}
-            onClick={() => handleLinkClick(menuItem)}
-          >
-            <div className="border-b border-[#202226] text-[#717172]">
-              <div className="flex gap-2 items-center justify-start px-8 mb-1 relative w-full py-3">
-                {activeSection === menuItem.route && (
-                  <div className="h-3 w-3 absolute left-3">
-                    <img src={active} alt="" />
+        {/* Navigation Links */}
+        <div className="flex flex-col w-full   overflow-scroll scrollbar-none bg-opacity-20 backdrop-filter backdrop-blur-md">
+          {portfolioUrls.map((menuItem) => (
+            <Link
+              to={`/${menuItem.route}`}
+              key={menuItem.route}
+              onClick={() => handleLinkClick(menuItem)}
+            >
+              <div className="border-b border-[#202226] text-[#717172]">
+                <div className="flex gap-2 items-center justify-start px-8 mb-1 relative w-full py-3">
+                  {activeSection === menuItem.route && (
+                    <div className="h-3 w-3 absolute left-3">
+                      <img src={active} alt="" />
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2">
+                    <img className="h-4 w-4" src={menuItem.icon} alt="" />
+                    <h5 className="text-sm">{menuItem.label}</h5>
                   </div>
-                )}
-                <div className="flex items-center gap-2">
-                  <img className="h-4 w-4" src={menuItem.icon} alt="" />
-                  <h5 className="text-sm">{menuItem.label}</h5>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
-
-      </div>
+            </Link>
+          ))}
+        </div>
         {/* Social Media Icons */}
-        <div className="flex gap-3 items-center px-8 py-4">
+        
+      </div>
+      <div className="flex gap-3 items-center px-8 py-4">
           {socialMediaIcons.map((item, index) => (
             <a
               key={index}
@@ -108,7 +109,6 @@ const SideBar = ({ setIsOpen }) => {
             </a>
           ))}
         </div>
-      </div>
     </motion.div>
   );
 };

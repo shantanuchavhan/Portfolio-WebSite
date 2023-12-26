@@ -12,12 +12,12 @@ module.exports = {
     // Add the custom scrollbar utility class
     function ({ addUtilities }) {
       const newUtilities = {
-        '.scrollbar-none': {
-          scrollbarWidth: 'none',
-          '-ms-overflow-style': 'none',
+        ".scrollbar-none": {
+          scrollbarWidth: "none",
+          "-ms-overflow-style": "none",
         },
       };
-      addUtilities(newUtilities, ['responsive', 'hover']);
+      addUtilities(newUtilities, ["responsive", "hover"]);
     },
   ],
 };
