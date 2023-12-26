@@ -13,15 +13,15 @@ const Portfolio = () => {
         <div className="flex items-center justify-center pt-10">
           <div className="flex rounded-xl gap-2 border border-gray-300 border-dotted overflow-hidden">
             {/* Use map to generate buttons dynamically */}
-            {sections.map((section,index) => (
+            {sections.map((section, index) => (
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 2, ease: 'easeInOut' }}
-                
-            
+                transition={{ duration: 2, ease: "easeInOut" }}
                 key={index}
-                className={`${active === section ? "bg-sky-400" : ""} cursor-pointer  p-3 rounded-lg hover`}
+                className={`${
+                  active === section ? "bg-sky-400" : ""
+                } cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >
                 {section}
