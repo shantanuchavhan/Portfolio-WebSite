@@ -39,7 +39,7 @@ const AbouteMe = () => {
             </div>
           </div>
         </div>
-        <div className=" w-2/5 text-start pl-3 ">
+        <div className=" lg:w-2/5 text-start pl-3 ">
           <h1 className="text-lg">Personal information</h1>
           <div className="pt-2">
             <div className="flex gap-2">
