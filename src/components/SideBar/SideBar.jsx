@@ -12,7 +12,7 @@ import linkdinIcon from "../../images/linkedin.png";
 import hackerrankIcon from "../../images/hackerrank_icon.png";
 import youtubeIcon from "../../images/youtube.png";
 import twitterIcon from "../../images/twitter.png";
-const SideBar = () => {
+const SideBar = ({setIsOpen}) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const lastWord = currentPath.split("/").filter(Boolean).pop();
@@ -66,6 +66,7 @@ const SideBar = () => {
               to={`/${menuItem.route}`}
               key={index}
               onClick={() => {
+                setIsOpen(false)
                 setActiveSection((old) => menuItem.route);
               }}
             >
