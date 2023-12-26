@@ -26,7 +26,7 @@ const SideBar = ({ setIsOpen }) => {
 
   const handleLinkClick = (menuItem) => {
     setActiveSection(menuItem.route);
-    setIsOpen(false);
+    // setIsOpen(false);
   };
 
   return (
