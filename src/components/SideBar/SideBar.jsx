@@ -65,7 +65,7 @@ const SideBar = ({ setIsOpen }) => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex flex-col w-full overflow-scroll scrollbar-none bg-opacity-20 backdrop-filter backdrop-blur-md">
+      <div className="flex flex-col  overflow-scroll scrollbar-none bg-opacity-20 backdrop-filter backdrop-blur-md">
         {portfolioUrls.map((menuItem) => (
           <Link
             to={`/${menuItem.route}`}
