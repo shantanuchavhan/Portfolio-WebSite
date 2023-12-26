@@ -1,18 +1,11 @@
 import React from 'react'
-import AboutmeIcon from "../../images/profile.png"
+import Icon from "../../images/profile.png"
 import Header from '../../components/Header/Header'
 import { motion } from 'framer-motion'
+import AnimatedSection from '../../components/AnimatedSection/AnimatedSection'
 const AbouteMe = () => {
   return (
-    <div className='relative flex flex-col h-screen p-8  text-white '>
-      <motion.div
-        initial={{ opacity: 0, x: 0}}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 3, ease: "easeInOut" }}  
-      
-      >
-      <div >
-      <Header Icon={AboutmeIcon} sectonName={"Aboute Me"}/>
+    <AnimatedSection Icon={Icon} sectionName={"Aboute Me"} >
       <div className='flex justify-between gap-10 pt-6   h-5/6 '>
         <div className=' w-3/5  text-start pl-3'>
             <h1 className='text-lg '>Full stack Web Developer </h1>
@@ -56,15 +49,8 @@ const AbouteMe = () => {
             </div>
         </div>
       </div>
-      </div>
-      
-
-      </motion.div>
-      <div className="fixed inset-0 bg-black z-[-1] opacity-75 h-full w-screen">
-        </div>
-
-      
-    </div>
+    </AnimatedSection>
+    
   )
 }
 
