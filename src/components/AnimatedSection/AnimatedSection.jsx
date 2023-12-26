@@ -1,4 +1,4 @@
-import Reac,{useEffect} from "react";
+import React,{useEffect} from "react";
 import { motion } from "framer-motion";
 import Header from "../../components/Header/Header";
 import { useSideBarContext } from "../../context/SideBarProvider";
@@ -10,7 +10,7 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
       if(isOpen){
         setIsOpen((old)=>false)
       }
-  })
+  },[isOpen,setIsOpen])
   return (
     <div className=" p-8 text-white  min-h-screen">
       <motion.div

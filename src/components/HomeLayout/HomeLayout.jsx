@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
@@ -21,7 +21,7 @@ const HomeLayout = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [setIsOpen]);
 
   return (
     <div className="flex">
