@@ -66,8 +66,9 @@ const SideBar = ({setIsOpen}) => {
               to={`/${menuItem.route}`}
               key={index}
               onClick={() => {
-                setIsOpen(false)
+                
                 setActiveSection((old) => menuItem.route);
+                setIsOpen((old)=>false)
               }}
             >
               <div className="flex gap-2 items-center justify-start px-8 mb-1  relative w-full py-3 ">
