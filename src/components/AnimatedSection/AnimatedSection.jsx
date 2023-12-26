@@ -10,7 +10,7 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
       if(isOpen){
         setIsOpen((old)=>false)
       }
-  },[isOpen,setIsOpen])
+  },[setIsOpen])
   return (
     <div className=" p-8 text-white  min-h-screen">
       <motion.div
