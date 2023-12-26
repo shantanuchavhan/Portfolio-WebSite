@@ -33,10 +33,10 @@ const HomeLayout = () => {
       <div className="line h-1 w-6 bg-gray-700 my-1"></div>
       <div className="line h-1 w-6 bg-gray-700 my-1"></div>
     </div>
-      <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60 z-10 overflow-scroll  shadow-lg`}>
+      <div className={`${isOpen ? "block fixed top-0" : "hidden  w-1/6" }  lg:block w-60 z-10 overflow-hidden   shadow-lg`}>
         <SideBar />
       </div>
-      <div className="w-full z-1  overflow-hidden">
+      <div className="w-full z-1  overflow-scroll">
         <div className="text-white">
           <Outlet />
         </div>
