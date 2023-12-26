@@ -64,7 +64,7 @@ const SideBar = () => {
         ))}
         <div className="flex gap-3 items-center px-8   py-4">
         {socialMediaIcons.map((item, index) => (
-        <a key={index} href={item.link} target="_blank" className="opacity-75 hover:scale-110 hover:opacity-100">
+        <a key={index} href={item.link} target="_blank" rel="noreferrer" className="opacity-75 hover:scale-110 hover:opacity-100">
           <img
             className={`filter filter-grayscale ${item.size} opacity-50 h-4 w-5`}
             src={item.icon}
