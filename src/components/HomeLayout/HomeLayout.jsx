@@ -36,7 +36,7 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-hidden fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translat-x-full bottom-0   shadow-lg`}
+        }  lg:block w-60 z-10 overflow-hidden fixed top-0 left-0  bottom-0   shadow-lg`}
       >
         <SideBar setIsOpen={setIsOpen} />
       </div>

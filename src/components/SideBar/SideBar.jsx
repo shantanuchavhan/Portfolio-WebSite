@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+
 import { useLocation, Link } from "react-router-dom";
 import portfolioUrls from "./PortfolioSectionsNames";
 import active from "../../images/active.png";
