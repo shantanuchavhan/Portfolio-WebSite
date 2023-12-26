@@ -55,7 +55,7 @@ const SideBar = () => {
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
 
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
-          <h1 className=" absolute bottom-3 text-white">Shantanu c</h1>
+          <h1 className=" absolute bottom-3 text-white">Shantanu c </h1>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ const SideBar = () => {
             </Link>
           </div>
         ))}
-        <div className="flex gap-3 items-center px-8   py-4">
+        <div className="flex absolute bottom-3 gap-3 items-center px-8   py-4">
           {socialMediaIcons.map((item, index) => (
             <a
               key={index}
