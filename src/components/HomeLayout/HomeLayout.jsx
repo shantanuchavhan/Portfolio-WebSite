@@ -35,7 +35,7 @@ const HomeLayout = () => {
       </div>
       <div
         className={`${
-          isOpen ? "block fixed top-0" : "hidden  w-1/6"
+          isOpen ? "block fixed top-0" : "hidden overflow-auto  w-1/6"
         }  lg:block w-60 z-10   shadow-lg`}
       >
         <SideBar />
