@@ -29,7 +29,7 @@ const SideBar = () => {
         initial={{ width: "0%", x: 0 }}
         animate={{ width: "100%", x: 0 }}
         transition={{ duration: 3, ease: "easeInOut" }}
-    className="flex flex-col z-12 items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat ">
+    className="flex flex-col overflow-hidden items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat ">
       <div className=" w-full text-center  relative">
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
 
