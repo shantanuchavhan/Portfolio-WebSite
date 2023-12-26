@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
-    <div className="flex items-center justify-center h-screen   relative">
+    <div className="flex items-center z-1 justify-center h-screen   relative">
       <div className="relative  flex items-center justify-center ">
         <motion.div
           initial={{ opacity: 0, x: 0 }}
@@ -18,7 +18,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0, color: "wheat" }}
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
         >
-          <h1 className=" z-1 text-[43px] bg-transparent">Shantanu chavhan</h1>
+          <h1 className="  text-[43px] bg-transparent">Shantanu chavhan</h1>
           <motion.div
             initial={{ opacity: 0, y: 100, color: "white" }}
             animate={{ opacity: 1, y: 0, color: "white" }}
