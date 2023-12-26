@@ -21,7 +21,7 @@ const Portfolio = () => {
                 
             
                 key={index}
-                className={`${active === section ? "bg-sky-400" : ""}  p-3 rounded-lg hover`}
+                className={`${active === section ? "bg-sky-400" : ""} cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >
                 {section}
