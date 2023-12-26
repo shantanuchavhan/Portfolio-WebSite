@@ -8,5 +8,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // Add the custom scrollbar utility class
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.scrollbar-none': {
+          scrollbarWidth: 'none',
+          '-ms-overflow-style': 'none',
+        },
+      };
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };

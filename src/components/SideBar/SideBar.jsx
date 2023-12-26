@@ -54,7 +54,7 @@ const SideBar = ({ setIsOpen }) => {
       initial={{ width: "0%", x: 0 }}
       animate={{ width: "100%", x: 0 }}
       transition={{ duration: 3, ease: "easeInOut" }}
-      className="flex flex-col min-h-screen relative  items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
+      className="flex flex-col min-h-screen  relative  items-center justify-center shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
       <div className="w-full absolute  text-center relative">
@@ -65,7 +65,7 @@ const SideBar = ({ setIsOpen }) => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex flex-col w-full overflow-scroll bg-opacity-20 backdrop-filter backdrop-blur-md">
+      <div className="flex flex-col w-full overflow-scroll scrollbar-none bg-opacity-20 backdrop-filter backdrop-blur-md">
         {portfolioUrls.map((menuItem) => (
           <Link
             to={`/${menuItem.route}`}

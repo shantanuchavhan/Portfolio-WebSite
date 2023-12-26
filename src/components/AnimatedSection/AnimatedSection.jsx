@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 
 const AnimatedSection = ({ Icon, sectionName, children }) => {
   return (
-    <div className=" p-8 text-white">
+    <div className=" p-8 text-white min-h-screen">
       <motion.div
         initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
