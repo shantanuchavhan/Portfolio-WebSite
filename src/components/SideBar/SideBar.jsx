@@ -55,7 +55,7 @@ const SideBar = () => {
         <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
 
         <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
-          <h1 className=" absolute bottom-3 text-white">Shantanu</h1>
+          <h1 className=" absolute bottom-3 text-white">Shantanu c</h1>
         </div>
       </div>
 
