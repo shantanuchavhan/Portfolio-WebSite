@@ -38,6 +38,7 @@ const HomeLayout = () => {
       </div>
       <div className="w-full z-1" >
   <div className="text-white" style={{ overflow: 'scroll' }}>
+  {isOpen && (<div className="fixed inset-0 bg-black z-[-1] opacity-75 h-full"></div>)}
     <Outlet />
   </div>
 </div>
