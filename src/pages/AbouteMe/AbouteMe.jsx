@@ -6,7 +6,7 @@ const AbouteMe = () => {
   return (
     <AnimatedSection Icon={Icon} sectionName={"Aboute Me"}>
       <div className=" lg:flex justify-between gap-10 pt-6   h-5/6 ">
-        <div className=" w-3/5  text-start pl-3">
+        <div className=" lg:w-3/5  text-start pl-3">
           <h1 className="text-lg ">Full stack Web Developer </h1>
           <div>
             <div className="pt-2">
