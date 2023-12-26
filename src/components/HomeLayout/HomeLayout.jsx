@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
-
+import { useSideBarContext } from "../../context/SideBarProvider";
 const HomeLayout = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const {isOpen, setIsOpen} = useSideBarContext ();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

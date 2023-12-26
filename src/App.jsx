@@ -10,10 +10,11 @@ import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import bg from "./images/pexels-pixabay-326333.jpg";
 import HomeLayout from "./components/HomeLayout/HomeLayout";
-
+import { SideBarProvider } from "./context/SideBarProvider";
 function App() {
   return (
     <div className="App w-screen relative   h-screen">
+      <SideBarProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeLayout />}>
@@ -26,7 +27,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <div className="fixed top-0 opacity-75  left-0 z-[-10]">
+      </SideBarProvider>
+      <div className="fixed top-0 bottom-0 opacity-75  left-0 z-[-10]">
         <img className="object-cover h-screen w-screen" src={bg} alt="" />
       </div>
       <div className=" bg-black z-[-1] opacity-30 h-full min-h-screen bg-cover bg-center w-screen fixed  top-0 bottom-0"></div>
