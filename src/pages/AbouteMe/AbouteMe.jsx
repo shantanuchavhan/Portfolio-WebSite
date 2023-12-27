@@ -5,7 +5,7 @@ import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 const AbouteMe = () => {
   return (
     <AnimatedSection Icon={Icon} sectionName={"Aboute Me"}>
-      <div className=" gap-4 lg:flex  justify-between gap-10 pt-6   h-5/6 ">
+      <div className=" lg:flex  justify-between lg:gap-10 pt-6   h-5/6 ">
         <div className=" lg:w-3/5  text-start ">
           <h1 className="text-lg ">Full stack Web Developer </h1>
           <div>
@@ -39,7 +39,7 @@ const AbouteMe = () => {
             </div>
           </div>
         </div>
-        <div className=" lg:w-2/5 text-start  ">
+        <div className=" pt-6 lg:pt-0 lg:w-2/5 text-start  ">
           <h1 className="text-lg">Personal information</h1>
           <div className="pt-2">
             <div className="flex gap-2">

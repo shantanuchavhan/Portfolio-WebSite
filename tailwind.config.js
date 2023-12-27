@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "bg-portfolio": "url('/src/images/wallpaper-portfolio.jpg')",
       },
+      fontFamily: {
+        'dancing-script': ['Dancing Script', 'cursive'],
+      },
     },
   },
   plugins: [
