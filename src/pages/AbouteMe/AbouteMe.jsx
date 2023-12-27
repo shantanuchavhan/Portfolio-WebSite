@@ -11,7 +11,7 @@ const AbouteMe = () => {
           <div>
             <div className="pt-2">
               <p className="text-gray-500 text-[18px]">
-                Greetings! I'm a skilled Full Stack Web Developer specializing
+              <span className="text-gray-300">Greetings!</span> I'm a skilled Full Stack Web Developer specializing
                 in{" "}
                 <span className="text-gray-300">
                   React, Express.js, Next js, Tailwind, Css, MongoDB, Sql,
@@ -19,12 +19,12 @@ const AbouteMe = () => {
                 </span>{" "}
                 With a passion for crafting seamless digital experiences, I
                 excel in
-                <span className="text-gray-400">
+                <span className="text-gray-300">
                   {" "}
                   replicating intricate designs and optimizing solutions{" "}
                 </span>
                 . My focus is on creating pixel-perfect,{" "}
-                <span className="text-gray-400">
+                <span className="text-gray-300">
                   All device responsive interfaces
                 </span>
                 . Embracing a{" "}
@@ -33,7 +33,7 @@ const AbouteMe = () => {
                   component-based and systematic approach{" "}
                 </span>
                 , I ensure designs are not just faithfully replicated but also
-                optimized for efficiency. Let's collaborate to turn your digital
+                optimized for efficiency.<span className="text-gray-300"> Let's collaborate </span> to turn your digital
                 vision into a dynamic reality!
               </p>
             </div>
