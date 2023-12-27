@@ -41,8 +41,8 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-scroll overflow-x-hidden fixed top-0 left-0  bottom-0  ${
-          style.containerStyles
+        }  lg:block w-60 z-10 overflow-scroll scrollbar-none overflow-x-hidden fixed top-0 left-0  bottom-0  ${
+          style.hideScrollbar
         }  shadow-lg`}
       >
         <SideBar setIsOpen={setIsOpen} />

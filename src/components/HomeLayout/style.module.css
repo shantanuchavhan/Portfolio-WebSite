@@ -1,18 +1,5 @@
-.container {
-  margin: 0;
-  padding: 0;
-  background-color: antiquewhite;
-  background-size: cover;
-  background-position: center;
-  font-family: Arial, sans-serif;
-  background-repeat: no-repeat;
 
-  z-index: -1;
-  position: fixed;
-  background-color: rgba(0, 0, 20, 0.808);
-}
-
-.hide-scrollbar::-webkit-scrollbar {
+.hideScrollbar::-webkit-scrollbar {
   display: none;
 }
 

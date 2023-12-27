@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Icon from "../../images/suitcase.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 import { motion } from "framer-motion";
-
+import style from "./style.module.css"
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
   const sections = ["ALL", "WEBAPPS", "DASHBOARDS", "LANDINGPAGE"];
@@ -11,7 +11,7 @@ const Portfolio = () => {
     <AnimatedSection Icon={Icon} sectionName={"Portfolio"}>
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-center pt-10">
-          <div className="flex rounded-xl gap-2 border border-gray-300 border-dotted overflow-hidden overflow-x-scroll">
+          <div className={`flex rounded-xl gap-2 border border-gray-300  border-dotted overflow-hidden  overflow-x-scroll ${style.scroll}`}>
             {/* Use map to generate buttons dynamically */}
             {sections.map((section, index) => (
               <motion.div
