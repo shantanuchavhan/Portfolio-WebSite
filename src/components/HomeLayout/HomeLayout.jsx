@@ -27,12 +27,7 @@ const HomeLayout = () => {
   }, [setIsOpen]);
 
 
-  const containerStyles = {
-    overflowY: 'scroll',
-    '-ms-overflow-style': 'none',  // Hide scrollbar in IE and Edge
-    'scrollbar-width': 'none',     // Hide scrollbar in Firefox
-    WebkitOverflowScrolling: 'touch', // Smooth scrolling for iOS
-  };
+  
 
   return (
     <div className="flex">
