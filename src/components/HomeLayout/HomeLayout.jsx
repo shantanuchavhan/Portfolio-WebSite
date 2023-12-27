@@ -3,6 +3,8 @@ import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
 
+import style from "./style.module.css"
+
 const HomeLayout = () => {
   const {isOpen, setIsOpen} = useSideBarContext ();
 
@@ -24,6 +26,14 @@ const HomeLayout = () => {
     };
   }, [setIsOpen]);
 
+
+  const containerStyles = {
+    overflowY: 'scroll',
+    '-ms-overflow-style': 'none',  // Hide scrollbar in IE and Edge
+    'scrollbar-width': 'none',     // Hide scrollbar in Firefox
+    WebkitOverflowScrolling: 'touch', // Smooth scrolling for iOS
+  };
+
   return (
     <div className="flex">
       <div
@@ -37,9 +47,10 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-scroll fixed top-0 left-0  bottom-0   shadow-lg`}
+        }  lg:block w-60 z-10 overflow-scroll overflow-x-hidden fixed top-0 left-0  bottom-0  ${style.containerStyles}  shadow-lg`}
+       
       >
-        <SideBar setIsOpen={setIsOpen} />
+        <SideBar setIsOpen={setIsOpen}  />
       </div>
       <div className="w-full z-9 lg:ml-60 min-h-screen">
         <div
