@@ -12,6 +12,9 @@ const Home = () => {
   },[setIsOpen])
   return (
     <div className="flex items-center z-1 justify-center h-screen   relative">
+      {isOpen && (
+            <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
+          )}
       <div className="relative  flex items-center justify-center ">
         <motion.div
           initial={{ opacity: 0, x: 0 }}
