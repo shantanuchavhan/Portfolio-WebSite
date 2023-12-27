@@ -42,8 +42,7 @@ const HomeLayout = () => {
       </div>
       <div className="w-full z-9 lg:ml-60 min-h-screen">
         <div
-          className="text-white  "
-          
+          className="text-white"
         >
           {isOpen && (
             <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
