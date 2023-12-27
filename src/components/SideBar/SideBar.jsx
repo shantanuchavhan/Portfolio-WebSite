@@ -58,7 +58,7 @@ const SideBar = ({ setIsOpen }) => {
       <div >
         <div className="text-center relative">
           <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
-          <div className="text-lg text-white bg-blue-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-60">
+          <div className="text-lg text-white bg-sky-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-75">
             <h1 className="absolute bottom-3 text-white">Shantanu  </h1>
           </div>
         </div>

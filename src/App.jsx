@@ -30,8 +30,9 @@ function App() {
       </SideBarProvider>
       <div className="fixed top-0 bottom-0 opacity-75  left-0 z-[-10]">
         <img className="object-cover h-screen w-screen" src={bg} alt="" />
+        <div className=" bg-black z-[-1] opacity-30 h-full min-h-screen bg-cover bg-center w-screen absolute  top-0 bottom-0"></div>
       </div>
-      <div className=" bg-black z-[-1] opacity-30 h-full min-h-screen bg-cover bg-center w-screen fixed  top-0 bottom-0"></div>
+      
     </div>
   );
 }
