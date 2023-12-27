@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
-import { motion } from "framer-motion";
+
 const HomeLayout = () => {
   const {isOpen, setIsOpen} = useSideBarContext ();
 
