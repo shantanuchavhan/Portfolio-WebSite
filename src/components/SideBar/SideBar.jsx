@@ -52,14 +52,14 @@ const SideBar = ({ setIsOpen }) => {
   return (
     <div
       
-      className="flex flex-col min-h-screen  bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat"
+      className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat"
     >
       {/* Profile Image and Name */}
       <div >
         <div className="text-center relative">
-          <img src={ProfileImage} alt="" className="h-60 w-60 object-cover" />
-          <div className="text-lg text-white bg-sky-400 w-full h-10 absolute bottom-0 flex items-center justify-center opacity-75">
-            <h1 className="absolute bottom-3 text-white">Shantanu  </h1>
+          <img src={ProfileImage} alt="" className="h-60 mt-10 lg:mt-0 w-60 object-cover" />
+          <div className="hidden lg:block  bg-sky-400  w-screen h-10 absolute bottom-0 flex items-center justify-center opacity-75">
+            <h1 className="absolute bottom-3 pl-20 text-lg  text-white">Shantanu  </h1>
           </div>
         </div>
 

@@ -26,7 +26,7 @@ const HomeLayout = () => {
   return (
     <div className="flex">
       <div
-        className={`lg:hidden fixed top-5 left-5 z-20 ${isOpen ? "open" : ""}`}
+        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 bg-sky-300 w-screen ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
       >
         <div className="line h-1 w-6 bg-white my-1"></div>

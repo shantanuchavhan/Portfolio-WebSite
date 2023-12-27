@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = ({ Icon, sectonName }) => {
   return (
-    <div className="flex justify-between items-end  h-1/6 border-b border-dotted border-[#f8fee9] pt-10  md:p-3 lg:p-4">
-      <h1 className="text-4xl lg:m-2">{sectonName}</h1>
+    <div className="flex justify-between items-end  h-1/6 border-b border-dotted border-[#f8fee9] pt-10 py-2">
+      <h1 className="text-4xl my-2 ">{sectonName}</h1>
       <div>
-        <img className=" h-8 w-8 m-2 " src={Icon} alt="" />
+        <img className=" h-8 w-8 my-2  " src={Icon} alt="" />
       </div>
     </div>
   );

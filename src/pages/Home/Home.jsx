@@ -17,6 +17,7 @@ const Home = () => {
           initial={{ opacity: 0, x: -100, color: "white" }}
           animate={{ opacity: 1, x: 0, color: "wheat" }}
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
+          className="text-center"
         >
           <h1 className=" text-[43px] bg-transparent">Shantanu chavhan</h1>
           <motion.div
