@@ -47,7 +47,7 @@ const HomeLayout = () => {
       >
         <SideBar setIsOpen={setIsOpen} />
       </div>
-      <div className="w-full z-9 lg:ml-50 min-h-screen">
+      <div className="w-full z-9 lg:ml-56 min-h-screen">
         <div className="text-white">
           {isOpen && (
             <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
