@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Titillium+Web:ital,wght@1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Titillium+Web:ital,wght@1,300&display=swap");
 
 body {
   margin: 0;
@@ -16,7 +15,7 @@ body {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body::-webkit-scrollbar {

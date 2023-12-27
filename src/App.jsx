@@ -1,5 +1,6 @@
 import "./App.css";
 
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
@@ -32,7 +33,7 @@ function App() {
         <img className="object-cover left-0 z-[-10] h-screen w-screen" src={bg} alt="" />
         
       </div>
-      <div className="fixed inset-0 bg-black z-[-1] opacity-50 h-screen w-screen"></div>
+      
       
     </div>
   );

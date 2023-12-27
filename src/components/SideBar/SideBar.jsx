@@ -50,16 +50,19 @@ const SideBar = ({ setIsOpen }) => {
   };
 
   return (
-    <div
-      
-      className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat"
-    >
+    <div className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat">
       {/* Profile Image and Name */}
-      <div >
+      <div>
         <div className="text-center relative">
-          <img src={ProfileImage} alt="" className="h-60 mt-10 lg:mt-0 w-60 object-cover" />
+          <img
+            src={ProfileImage}
+            alt=""
+            className="h-60 mt-10 lg:mt-0 w-60 object-cover"
+          />
           <div className="hidden lg:block  bg-sky-400  w-screen h-10 absolute bottom-0 flex items-center justify-center opacity-75">
-            <h1 className="absolute bottom-3 pl-20 text-lg  text-white">Shantanu  </h1>
+            <h1 className="absolute bottom-3 pl-20 text-lg  text-white">
+              Shantanu{" "}
+            </h1>
           </div>
         </div>
 
@@ -88,25 +91,24 @@ const SideBar = ({ setIsOpen }) => {
           ))}
         </div>
         {/* Social Media Icons */}
-        
       </div>
       <div className="flex gap-3 items-center px-8 py-4">
-          {socialMediaIcons.map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noreferrer"
-              className="opacity-75 hover:scale-110 hover:opacity-100"
-            >
-              <img
-                alt={`Icon for ${item.label}`}
-                className={`filter filter-grayscale ${item.size} opacity-50 h-4 w-5`}
-                src={item.icon}
-              />
-            </a>
-          ))}
-        </div>
+        {socialMediaIcons.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noreferrer"
+            className="opacity-75 hover:scale-110 hover:opacity-100"
+          >
+            <img
+              alt={`Icon for ${item.label}`}
+              className={`filter filter-grayscale ${item.size} opacity-50 h-4 w-5`}
+              src={item.icon}
+            />
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

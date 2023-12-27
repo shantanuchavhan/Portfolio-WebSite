@@ -12,7 +12,6 @@
   background-color: rgba(0, 0, 20, 0.808);
 }
 
-
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }

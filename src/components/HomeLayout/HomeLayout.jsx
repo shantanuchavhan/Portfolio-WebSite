@@ -3,10 +3,10 @@ import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
 
-import style from "./style.module.css"
+import style from "./style.module.css";
 
 const HomeLayout = () => {
-  const {isOpen, setIsOpen} = useSideBarContext ();
+  const { isOpen, setIsOpen } = useSideBarContext();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,13 +26,12 @@ const HomeLayout = () => {
     };
   }, [setIsOpen]);
 
-
-  
-
   return (
     <div className="flex">
       <div
-        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 bg-sky-300 border border-b w-screen ${isOpen ? "open" : ""}`}
+        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 bg-sky-300 border border-b w-screen ${
+          isOpen ? "open" : ""
+        }`}
         onClick={toggleMenu}
       >
         <div className="line h-1 w-6 bg-white my-1"></div>
@@ -42,15 +41,14 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-scroll overflow-x-hidden fixed top-0 left-0  bottom-0  ${style.containerStyles}  shadow-lg`}
-       
+        }  lg:block w-60 z-10 overflow-scroll overflow-x-hidden fixed top-0 left-0  bottom-0  ${
+          style.containerStyles
+        }  shadow-lg`}
       >
-        <SideBar setIsOpen={setIsOpen}  />
+        <SideBar setIsOpen={setIsOpen} />
       </div>
       <div className="w-full z-9 lg:ml-60 min-h-screen">
-        <div
-          className="text-white"
-        >
+        <div className="text-white">
           {isOpen && (
             <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
           )}

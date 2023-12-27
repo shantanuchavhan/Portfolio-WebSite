@@ -7,7 +7,7 @@ module.exports = {
         "bg-portfolio": "url('/src/images/wallpaper-portfolio.jpg')",
       },
       fontFamily: {
-        'dancing-script': ['Dancing Script', 'cursive'],
+        "dancing-script": ["Dancing Script", "cursive"],
       },
     },
   },
