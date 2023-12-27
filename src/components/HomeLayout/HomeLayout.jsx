@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
+import { motion } from "framer-motion";
 const HomeLayout = () => {
   const {isOpen, setIsOpen} = useSideBarContext ();
 
@@ -36,7 +37,7 @@ const HomeLayout = () => {
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"
-        }  lg:block w-60 z-10 overflow-hidden fixed top-0 left-0  bottom-0   shadow-lg`}
+        }  lg:block w-60 z-10 overflow-scroll fixed top-0 left-0  bottom-0   shadow-lg`}
       >
         <SideBar setIsOpen={setIsOpen} />
       </div>
