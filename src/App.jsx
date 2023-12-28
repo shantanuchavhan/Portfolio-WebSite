@@ -42,9 +42,7 @@ function App() {
               </Route>
             </Routes>
           </BrowserRouter>
-          <div className="fixed top-0 bottom-0 opacity-75 left-0 z-[-10]">
-            <img className="object-cover left-0 z-[-10] h-screen w-screen" src={bg} alt="" />
-          </div>
+          
         </SideBarProvider>
       )}
     </div>
