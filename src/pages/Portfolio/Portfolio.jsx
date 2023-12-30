@@ -3,10 +3,12 @@ import Icon from "../../images/suitcase.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
+import { useSettingsContext } from "../../context/SettingsProvider";
 
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
   const [projects, setProjects] = useState([]);
+  const {color}=useSettingsContext()
 
   useEffect(() => {
     // Fetch projects based on the selected section
@@ -42,7 +44,7 @@ const Portfolio = () => {
                 transition={{ duration: 2, ease: "easeInOut" }}
                 key={index}
                 className={`${
-                  active === section ? "bg-sky-400" : ""
+                  active === section ? color : ""
                 } cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >

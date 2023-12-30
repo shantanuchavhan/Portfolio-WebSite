@@ -28,7 +28,7 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
                   <div className="bg-green-400 h-4 w-4" onClick={()=>setColor("bg-green-400")}></div>
                   <div className="bg-yellow-400 h-4 w-4" onClick={()=>setColor("bg-yellow-400")}></div>
                   <div className="bg-red-400 h-4 w-4" onClick={()=>setColor("bg-red-400")}></div>
-                  <div className="bg-blue-400 h-4 w-4" onClick={()=>setColor("bg-red-400")}></div>
+                  <div className="bg-blue-400 h-4 w-4" onClick={()=>setColor("bg-blue-400")}></div>
                 </div>
                 <div>
                   <h4>choose language</h4>
