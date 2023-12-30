@@ -1,10 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Icon from "../../images/suitcase.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 import { motion } from "framer-motion";
-import style from "./style.module.css"
+import style from "./style.module.css";
+
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // Fetch projects based on the selected section
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch(`http://127.0.0.1:8000/projects/`);
+        if (response.ok) {
+          const data = await response.json();
+          setProjects(data);
+        } else {
+          console.error("Failed to fetch projects");
+        }
+      } catch (error) {
+        console.error("Error fetching projects", error);
+      }
+    };
+
+    fetchProjects();
+  }, [active]);
+
   const sections = ["ALL", "WEBAPPS", "DASHBOARDS", "LANDINGPAGE"];
 
   return (
@@ -30,7 +52,16 @@ const Portfolio = () => {
           </div>
         </div>
         <div>
-          <h1>hii</h1>
+          <h1>{active}</h1>
+          {/* Display projects */}
+          <ul>
+            {projects.map((project) => (
+              <li key={project.id}>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </AnimatedSection>

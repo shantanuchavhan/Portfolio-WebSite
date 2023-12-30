@@ -10,6 +10,7 @@ import Contact from "./pages/Contact/Contact";
 
 import HomeLayout from "./components/HomeLayout/HomeLayout";
 import { SideBarProvider } from "./context/SideBarProvider";
+import { SettingsProvider } from "./context/SettingsProvider";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
       {isLoading ? (
         <Loading /> // Replace with your loading component or message
       ) : (
+        <SettingsProvider>
         <SideBarProvider>
           <BrowserRouter>
             <Routes>
@@ -42,8 +44,8 @@ function App() {
               </Route>
             </Routes>
           </BrowserRouter>
-          
         </SideBarProvider>
+        </SettingsProvider> 
       )}
     </div>
   );

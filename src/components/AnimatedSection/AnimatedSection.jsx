@@ -1,10 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { motion } from "framer-motion";
 import Header from "../../components/Header/Header";
 import { useSideBarContext } from "../../context/SideBarProvider";
 import bg from "../../images/pexels-pixabay-326333.jpg";
+import settings from "../../images/settings.png"
+import { useSettingsContext } from "../../context/SettingsProvider";
 
 const AnimatedSection = ({ Icon, sectionName, children }) => {
+  const {setColor}=useSettingsContext()
+  const [showSettings,setShowSettings]=useState(false)
   const { setIsOpen } = useSideBarContext();
   useEffect(() => {
     setIsOpen((old) => false);
@@ -16,6 +20,24 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 3, ease: "easeInOut" }}
       >
+          <div className="absolute top-60 right-0 ">
+            <img onClick={()=>setShowSettings((old)=>!old)} className="h-8 w-8 bg-white p-2 rounded-t" src={settings} alt="" /> 
+            <div className={`bg-white ${showSettings ? "block":"hidden"} text-black h-32 p-2  flex flex-col gap-1 z-30`}>
+                <h2>choose color</h2>
+                <div className="flex gap-3">
+                  <div className="bg-green-400 h-4 w-4" onClick={()=>setColor("bg-green-400")}></div>
+                  <div className="bg-yellow-400 h-4 w-4" onClick={()=>setColor("bg-yellow-400")}></div>
+                  <div className="bg-red-400 h-4 w-4" onClick={()=>setColor("bg-red-400")}></div>
+                  <div className="bg-blue-400 h-4 w-4" onClick={()=>setColor("bg-red-400")}></div>
+                </div>
+                <div>
+                  <h4>choose language</h4>
+                </div>
+            </div>
+          <div>
+
+          </div>
+        </div>
         <Header Icon={Icon} sectonName={sectionName} />
         {children}
       </motion.div>

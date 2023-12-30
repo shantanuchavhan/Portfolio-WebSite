@@ -9,7 +9,7 @@ import linkdinIcon from "../../images/linkedin.png";
 import hackerrankIcon from "../../images/hackerrank_icon.png";
 import youtubeIcon from "../../images/youtube.png";
 import twitterIcon from "../../images/twitter.png";
-
+import { useSettingsContext } from "../../context/SettingsProvider";
 const socialMediaIcons = [
   {
     link: "https://github.com/shantanuchavhan",
@@ -39,6 +39,8 @@ const socialMediaIcons = [
 ];
 
 const SideBar = ({ setIsOpen }) => {
+  const {color}=useSettingsContext()
+  
   const location = useLocation();
   const currentPath = location.pathname;
   const lastWord = currentPath.split("/").filter(Boolean).pop();
@@ -59,7 +61,7 @@ const SideBar = ({ setIsOpen }) => {
             alt=""
             className="h-60 mt-10 lg:mt-0 w-60 object-cover"
           />
-          <div className="hidden lg:block  bg-sky-400  w-screen h-10 absolute bottom-0 flex items-center justify-center opacity-75">
+          <div className={`hidden lg:block   ${color}  w-screen h-10 absolute bottom-0 flex items-center justify-center opacity-75`}>
             <h1 className="absolute bottom-3 pl-16 text-lg  text-white">
               Shantanu{" "}
             </h1>
@@ -77,8 +79,7 @@ const SideBar = ({ setIsOpen }) => {
               <div className="border-b border-[#202226] text-[#717172]">
                 <div className="flex gap-2 items-center justify-start px-8 mb-1 relative w-full py-3">
                   {activeSection === menuItem.route && (
-                    <div className="h-3 w-3 absolute left-3">
-                      <img src={active} alt="" />
+                    <div className={`h-3 w-3 absolute left-3 ${color} h3 w-3 rounded-full`}>
                     </div>
                   )}
                   <div className="flex items-center gap-2">

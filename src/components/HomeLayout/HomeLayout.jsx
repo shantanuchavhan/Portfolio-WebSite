@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
+import { useSettingsContext } from "../../context/SettingsProvider";
 
 import style from "./style.module.css";
 
 const HomeLayout = () => {
   const { isOpen, setIsOpen } = useSideBarContext();
+  const {color}=useSettingsContext()
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,7 +31,7 @@ const HomeLayout = () => {
   return (
     <div className="flex">
       <div
-        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 bg-sky-300 border border-b w-screen ${
+        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 ${color} border border-b w-screen ${
           isOpen ? "open" : ""
         }`}
         onClick={toggleMenu}
