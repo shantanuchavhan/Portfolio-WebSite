@@ -14,7 +14,7 @@ const HomeLayout = () => {
   const spinTransition = {
     loop: Infinity,
     ease: "easeIn",
-    duration: 10
+    duration: 20
     
   };
 
@@ -38,7 +38,10 @@ const HomeLayout = () => {
 
   return (
     <div className="flex">
-      <div
+      <motion.div
+         initial={{ opacity: 0, x: 0 }}
+         animate={{ opacity: 1, x: 0 }}
+         transition={{ duration: 3, ease: "easeInOut",delay: 3  }}
         className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 ${color} border border-b w-screen ${
           isOpen ? "open" : ""
         }`}
@@ -47,7 +50,7 @@ const HomeLayout = () => {
         <div className="line h-1 w-6 bg-white my-1"></div>
         <div className="line h-1 w-6 bg-gray-700 my-1"></div>
         <div className="line h-1 w-6 bg-gray-700 my-1"></div>
-      </div>
+      </motion.div>
       <motion.div
          initial={{ opacity: 0, x: 0 }}
          animate={{ opacity: 1, x: 0 }}
