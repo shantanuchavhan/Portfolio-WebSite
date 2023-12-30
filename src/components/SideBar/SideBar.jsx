@@ -10,6 +10,9 @@ import hackerrankIcon from "../../images/hackerrank_icon.png";
 import youtubeIcon from "../../images/youtube.png";
 import twitterIcon from "../../images/twitter.png";
 import { useSettingsContext } from "../../context/SettingsProvider";
+
+import { motion } from "framer-motion";
+
 const socialMediaIcons = [
   {
     link: "https://github.com/shantanuchavhan",
@@ -45,6 +48,7 @@ const SideBar = () => {
   const currentPath = location.pathname;
   const lastWord = currentPath.split("/").filter(Boolean).pop();
   const [activeSection, setActiveSection] = useState(lastWord || "");
+  
 
   const handleLinkClick = (menuItem) => {
     setActiveSection(menuItem.route);
@@ -52,7 +56,11 @@ const SideBar = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat">
+    <motion.div 
+    initial={{ opacity: 0, x: 0 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 3, ease: "easeInOut" }}
+    className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat">
       {/* Profile Image and Name */}
       <div>
         <div className="text-center relative">
@@ -110,7 +118,7 @@ const SideBar = () => {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
