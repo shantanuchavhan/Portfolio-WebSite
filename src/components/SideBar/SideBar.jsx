@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { useLocation, Link } from "react-router-dom";
 import portfolioUrls from "./PortfolioSectionsNames";
-import active from "../../images/active.png";
+
 import ProfileImage from "../../images/profilepic.png";
 import githubIcon from "../../images/github-logo.png";
 import linkdinIcon from "../../images/linkedin.png";
@@ -38,7 +38,7 @@ const socialMediaIcons = [
   },
 ];
 
-const SideBar = ({ setIsOpen }) => {
+const SideBar = () => {
   const {color}=useSettingsContext()
   
   const location = useLocation();
