@@ -10,6 +10,12 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
   const {setColor}=useSettingsContext()
   const [showSettings,setShowSettings]=useState(false)
   const { setIsOpen } = useSideBarContext();
+  const spinTransition = {
+    loop: Infinity,
+    ease: "easeIn",
+    duration: 10
+    
+  };
   useEffect(() => {
     setIsOpen((old) => false);
   }, [setIsOpen]);
@@ -21,8 +27,13 @@ const AnimatedSection = ({ Icon, sectionName, children }) => {
         transition={{ duration: 3, ease: "easeInOut" }}
       >
           <div className="absolute top-60 right-0 ">
-            <img onClick={()=>setShowSettings((old)=>!old)} className="h-8 w-8 bg-white p-2 rounded-t" src={settings} alt="" /> 
-            <div className={`bg-white ${showSettings ? "block":"hidden"} text-black h-32 p-2  flex flex-col gap-1 z-30`}>
+          <div className="h-10 w-10 bg-white p-3 rounded-t" >
+    <motion.img
+      animate={{ rotate: 360, scale: [1,2,1,2,1,2] }}
+      transition={spinTransition}
+     onClick={()=>setShowSettings((old)=>!old)} src={settings} alt="" ></motion.img>
+  </div>
+            <div className={`bg-white ${showSettings ? "block":"hidden"} text-black h-32 p-2  flex flex-col gap-1 z-100`}>
                 <h2>choose color</h2>
                 <div className="flex gap-3">
                   <div className="bg-green-400 h-4 w-4" onClick={()=>setColor("bg-green-400")}></div>
