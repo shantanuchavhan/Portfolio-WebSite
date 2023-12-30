@@ -42,7 +42,7 @@ const HomeLayout = () => {
          initial={{ opacity: 0, x: 0 }}
          animate={{ opacity: 1, x: 0 }}
          transition={{ duration: 3, ease: "easeInOut",delay: 2  }}
-        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 ${color} border border-b w-screen ${
+        className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 ${color} opacity-50 border border-b w-screen ${
           isOpen ? "open" : ""
         }`}
         onClick={toggleMenu}
