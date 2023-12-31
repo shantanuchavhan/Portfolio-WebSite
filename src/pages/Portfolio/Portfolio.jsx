@@ -14,7 +14,7 @@ const Portfolio = () => {
     // Fetch projects based on the selected section
     const fetchProjects = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/projects/`);
+        const response = await fetch(`https://portfolioapp-q7ra.onrender.com/projects/`);
         if (response.ok) {
           const data = await response.json();
           setProjects(data);
