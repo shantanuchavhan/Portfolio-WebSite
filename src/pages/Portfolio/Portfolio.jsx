@@ -54,10 +54,13 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-10">
-          <h1>{active}</h1>
+        <div className="flex flex-col gap-10">
+          <div className="flex gap-10">
+            <h1>{active } </h1>
+            <h3>{projects.length}</h3>
+          </div>
           {/* Display projects */}
-          <ul >
+          <ul  >
             {projects.map((project) => (
               <li className=" lg:flex lg:gap-10"  key={project.id}>
                 <div className="lg:w-50">
