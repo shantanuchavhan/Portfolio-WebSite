@@ -17,6 +17,7 @@ const Portfolio = () => {
         const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`);
         if (response.ok) {
           const data = await response.json();
+          console.log(data,"data")
           setProjects(data);
         } else {
           console.error("Failed to fetch projects");
