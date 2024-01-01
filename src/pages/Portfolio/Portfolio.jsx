@@ -62,7 +62,7 @@ const Portfolio = () => {
               <li  key={project.id}>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <img src={project.images} alt="" />
+                <img src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" />
               </li>
             ))}
           </ul>
