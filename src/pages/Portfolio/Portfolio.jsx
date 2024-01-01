@@ -55,9 +55,7 @@ const Portfolio = () => {
           </div>
         </div>
         <motion.div
-         initial={{ opacity: 0, x: -1000 }}
-         animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 2, ease: "easeInOut",delay:1 }}
+         
          className="flex flex-col gap-6 px:10 lg:px-20">
           <motion.div 
           initial={{ opacity: 0, x: -1000 }}
@@ -75,7 +73,11 @@ const Portfolio = () => {
             {projects.map((project) => (
               <li className=" lg:flex lg:items-start lg:gap-6"  key={project.id}>
                 <div className="lg:w-50">
-                <img src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" />
+                <motion.img 
+                initial={{ opacity: 0, x: -1000 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 2, ease: "easeInOut",delay:1 }}
+                src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" ></motion.img>
                 </div>
                 <div >
                 <h3>{project.title}</h3>
