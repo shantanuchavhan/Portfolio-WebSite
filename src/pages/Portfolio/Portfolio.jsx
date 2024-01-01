@@ -55,7 +55,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 px:10 lg:px-20">
-          <div className="flex justify-between">
+          <div className="flex justify-center">
             <h1>{active } </h1>
             <h3>{projects.length}</h3>
           </div>
