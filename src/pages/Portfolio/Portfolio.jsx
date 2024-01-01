@@ -56,12 +56,12 @@ const Portfolio = () => {
         <div>
           <h1>{active}</h1>
           {/* Display projects */}
-          <ul className="flex flex-col gap-2">
+          <ul className="">
             {projects.map((project) => (
               <li className="" key={project.id}>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <img className="h-30 w-30" src={project.images} alt="" />
+                <img src={project.images} alt="" />
               </li>
             ))}
           </ul>
