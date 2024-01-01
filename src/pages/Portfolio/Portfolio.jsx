@@ -55,9 +55,9 @@ const Portfolio = () => {
           </div>
         </div>
         <motion.div
-         initial={{ opacity: 0, x: -1500 }}
+         initial={{ opacity: 0, x: -1000 }}
          animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 2, ease: "easeInOut",delay:2 }}
+         transition={{ duration: 2, ease: "easeInOut",delay:1 }}
          className="flex flex-col gap-6 px:10 lg:px-20">
           <div className="">
             <h3>{projects.length}</h3>
