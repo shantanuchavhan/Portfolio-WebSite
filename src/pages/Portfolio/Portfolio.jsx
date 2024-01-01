@@ -54,12 +54,12 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="flex gap-10">
           <h1>{active}</h1>
           {/* Display projects */}
-          <ul>
+          <ul >
             {projects.map((project) => (
-              <li className=" lg:flex lg:gap-20"  key={project.id}>
+              <li className=" lg:flex lg:gap-10"  key={project.id}>
                 <div className="lg:w-50">
                 <img src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" />
                 </div>
