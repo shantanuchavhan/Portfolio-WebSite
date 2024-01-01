@@ -54,7 +54,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 px-20">
           <div className="flex justify-between">
             <h1>{active } </h1>
             <h3>{projects.length}</h3>
