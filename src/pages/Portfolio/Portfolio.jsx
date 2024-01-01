@@ -64,7 +64,7 @@ const Portfolio = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: "easeInOut",delay:1 }}
           className="">
-            <h3>{projects.length}</h3>
+            <h3>Total Projects:-{projects.length}</h3>
           </motion.div>
           {/* Display projects */}
           <motion.ul 
