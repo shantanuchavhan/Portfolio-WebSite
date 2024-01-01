@@ -54,12 +54,16 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-6 px:10 lg:px-20">
+        <motion.div
+         initial={{ opacity: 0, x: -1500 }}
+         animate={{ opacity: 1, x: 0 }}
+         transition={{ duration: 2, ease: "easeInOut",delay:2 }}
+         className="flex flex-col gap-6 px:10 lg:px-20">
           <div className="">
             <h3>{projects.length}</h3>
           </div>
           {/* Display projects */}
-          <ul  >
+          <ul className="flex flex-col gap-6" >
             {projects.map((project) => (
               <li className=" lg:flex lg:items-start lg:gap-6"  key={project.id}>
                 <div className="lg:w-50">
@@ -73,7 +77,7 @@ const Portfolio = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
     </AnimatedSection>
   );
