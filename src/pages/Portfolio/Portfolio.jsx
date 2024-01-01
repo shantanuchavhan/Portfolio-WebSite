@@ -54,7 +54,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-10 px-20">
+        <div className="flex flex-col gap-6 px:10 lg:px-20">
           <div className="flex justify-between">
             <h1>{active } </h1>
             <h3>{projects.length}</h3>
@@ -62,7 +62,7 @@ const Portfolio = () => {
           {/* Display projects */}
           <ul  >
             {projects.map((project) => (
-              <li className=" lg:flex lg:gap-10"  key={project.id}>
+              <li className=" lg:flex lg:gap-6"  key={project.id}>
                 <div className="lg:w-50">
                 <img src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" />
                 </div>
