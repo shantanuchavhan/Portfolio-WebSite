@@ -59,7 +59,7 @@ const Portfolio = () => {
           <ul className="flex flex-col gap-2">
             {projects.map((project) => (
               <li className="flex gap-3" key={project.id}>
-                <img className="h-30 w-30" src={project.images} alt="" />
+                <img className="h-60 w-60" src={project.images} alt="" />
                <div>
                 <h3>{project.title}</h3>
                   <p>{project.description}</p>
