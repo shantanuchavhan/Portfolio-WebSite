@@ -60,7 +60,9 @@ const Portfolio = () => {
           <ul>
             {projects.map((project) => (
               <li className=" lg:flex"  key={project.id}>
+                <div className="lg:w-50">
                 <img src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`} alt="" />
+                </div>
                 <div >
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
