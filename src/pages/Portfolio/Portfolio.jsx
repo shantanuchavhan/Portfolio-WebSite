@@ -56,9 +56,9 @@ const Portfolio = () => {
         <div>
           <h1>{active}</h1>
           {/* Display projects */}
-          <ul className="">
+          <ul>
             {projects.map((project) => (
-              <li className="" key={project.id}>
+              <li  key={project.id}>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <img src={project.images} alt="" />
