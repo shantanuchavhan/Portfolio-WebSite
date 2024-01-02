@@ -72,10 +72,11 @@ const Portfolio = () => {
           initial={{ opacity: 0, x: -1000 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className="">
+          className="h-10">
             <h3>Total Projects:-{projects.length}</h3>
           </motion.div>
           {/* Display projects */}
+          <div className="h-90">
           {
             !loading ? (
               <motion.ul 
@@ -109,6 +110,7 @@ const Portfolio = () => {
               </div>
             )
           }
+          </div>
         </div>
       </div>
     </AnimatedSection>
