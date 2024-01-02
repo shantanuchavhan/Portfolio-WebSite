@@ -28,6 +28,7 @@ const Portfolio = () => {
             if (response.ok) {
               const data = await response.json();
               setProjects(data);
+              setLoading((old)=>false)
           } else {
               console.error("Failed to fetch projects");
           }
