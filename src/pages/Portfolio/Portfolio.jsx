@@ -4,15 +4,18 @@ import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
 import { useSettingsContext } from "../../context/SettingsProvider";
+import ReactLoading from "react-loading";
 
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
   const [projects, setProjects] = useState([]);
   const {color}=useSettingsContext()
+  const [loading,setLoading]=useState(false)
 
   useEffect(() => {
     // Fetch projects based on the selected section
     const fetchProjects = async () => {
+      setLoading((old)=>true)
       try {
           if(active==="ALL"){
             const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`)
@@ -74,7 +77,9 @@ const Portfolio = () => {
             <h3>Total Projects:-{projects.length}</h3>
           </motion.div>
           {/* Display projects */}
-          <motion.ul 
+          {
+            !loading ? (
+              <motion.ul 
           initial={{ opacity: 0, x: 1000 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: "easeInOut",delay:1 }}
@@ -92,6 +97,14 @@ const Portfolio = () => {
               </li>
             ))}
           </motion.ul>
+            ):(
+              <div className='flex items-center justify-center h-screen '>
+                <div className='flex   gap-3'>
+                <ReactLoading type="spokes" color="#0000FF" height={100} width={50} />
+              </div>
+              </div>
+            )
+          }
         </motion.div>
       </div>
     </AnimatedSection>
