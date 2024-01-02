@@ -11,6 +11,7 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
   const {color}=useSettingsContext()
   const [loading,setLoading]=useState(false)
+  const [error,setError]=useState(false)
 
   useEffect(() => {
     // Fetch projects based on the selected section
@@ -30,6 +31,7 @@ const Portfolio = () => {
               setProjects(data);
               setLoading((old)=>false)
           } else {
+              setError(true)
               console.error("Failed to fetch projects");
           }
           }
@@ -98,6 +100,11 @@ const Portfolio = () => {
               </li>
             ))}
           </motion.ul>
+            ):error ?(
+              <div>
+                <h1 className="text-red-400 text-lg">Error while loading</h1>
+              </div>
+              
             ):(
               <div className='flex items-center justify-center '>
                 <div className='flex   gap-3'>
