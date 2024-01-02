@@ -101,12 +101,12 @@ const Portfolio = () => {
             ))}
           </motion.ul>
             ):error ?(
-              <div>
+              <div className="h-full">
                 <h1 className="text-red-400 text-lg">Error while loading</h1>
               </div>
               
             ):(
-              <div className='flex items-center justify-center '>
+              <div className='flex items-center justify-center h-full '>
                 <div className='flex   gap-3'>
                 <ReactLoading type="spokes" color="#0000FF" height={100} width={50} />
               </div>
