@@ -14,18 +14,21 @@ const Portfolio = () => {
     // Fetch projects based on the selected section
     const fetchProjects = async () => {
       try {
-        const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`);
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data,"data")
-          setProjects(data);
-        } else {
-          console.error("Failed to fetch projects");
-        }
+          if(active==="ALL"){
+            const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`)
+          }else{
+            const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/`)
+          }
+          if (response.ok) {
+              const data = await response.json();
+              setProjects(data);
+          } else {
+              console.error("Failed to fetch projects");
+          }
       } catch (error) {
-        console.error("Error fetching projects", error);
+          console.error("Error fetching projects", error);
       }
-    };
+  };
 
     fetchProjects();
   }, [active]);
