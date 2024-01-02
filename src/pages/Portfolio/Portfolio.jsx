@@ -76,8 +76,8 @@ const Portfolio = () => {
             <h3>Total Projects:-{projects.length}</h3>
           </motion.div>
           {/* Display projects */}
-          <div className="h-90">
-          {
+          <div>
+             {
             !loading ? (
               <motion.ul 
           initial={{ opacity: 0, x: 0 }}
