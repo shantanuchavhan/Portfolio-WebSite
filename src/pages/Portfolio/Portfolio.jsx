@@ -16,14 +16,18 @@ const Portfolio = () => {
       try {
           if(active==="ALL"){
             const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`)
+            getResponse(response)
           }else{
             const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/`)
+            getResponse(response)
           }
-          if (response.ok) {
+          async function getResponse(response){
+            if (response.ok) {
               const data = await response.json();
               setProjects(data);
           } else {
               console.error("Failed to fetch projects");
+          }
           }
       } catch (error) {
           console.error("Error fetching projects", error);
