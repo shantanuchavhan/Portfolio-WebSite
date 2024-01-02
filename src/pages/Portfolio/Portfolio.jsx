@@ -83,9 +83,9 @@ const Portfolio = () => {
           {
             !loading ? (
               <motion.ul 
-          initial={{ opacity: 0, x: 1000 }}
+          initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 2, ease: "easeInOut",delay:1 }}
+          transition={{ duration: 1, ease: "easeInOut", }}
           className="flex flex-col gap-6" >
             {projects.map((project) => (
               <li className=" lg:flex lg:items-start lg:gap-6"  key={project.id}>
