@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import { I18nextProvider } from 'react-i18next';
+import i18n from "./i18n";
 
 import HomeLayout from "./components/HomeLayout/HomeLayout";
 import { SideBarProvider } from "./context/SideBarProvider";
@@ -33,7 +34,7 @@ function App() {
       ) : (
 
         <SettingsProvider>
-          <I18nextProvider>
+          <I18nextProvider i18n={i18n}>
         <SideBarProvider>
           <BrowserRouter>
             <Routes>
