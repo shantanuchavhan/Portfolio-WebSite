@@ -12,7 +12,7 @@ const Header = ({ Icon, sectonName }) => {
   return (
     <div className="flex justify-between items-end  h-1/6 border-b border-dotted border-[#f8fee9] pt-10 lg:pt-6 py-2">
       <h1 className="text-[28px] lg:text-[34px] my-2 font-dancing-script ">
-      {capitalizeFirstLetter(sectonName)}
+      {t(sectonName).charAt(0).toUpperCase() + string.slice(1)}
       </h1>
       <div>
         <img
