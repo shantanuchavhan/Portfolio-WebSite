@@ -32,7 +32,7 @@ const resources = {
     "translation": {
       "home": "Accueil",
       "about": "À propos de moi",
-      "portfolio": "Portfolio",
+      "portfolio": "Portfolioosj",
       "contact": "Contact",
       "welcome_message": "Bienvenue sur mon portfolio !",
       "about_me": "À propos de moi",
