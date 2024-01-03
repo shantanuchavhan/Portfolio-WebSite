@@ -66,7 +66,7 @@ const HomeLayout = () => {
            {
             showSettings?
             (
-              <SettingsSection/>
+              <SettingsSection setColor={setColor}/>
             ):""
            }
             

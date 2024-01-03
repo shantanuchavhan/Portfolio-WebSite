@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-const SettingsSection = () => {
+const SettingsSection = ({setColor}) => {
     const { i18n } = useTranslation();
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang);
