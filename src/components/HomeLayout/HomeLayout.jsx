@@ -55,7 +55,7 @@ const HomeLayout = () => {
       <motion.div
          initial={{ opacity: 0, x: 0 }}
          animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 3, ease: "easeInOut",delay: 6}}
+         transition={{ duration: 3, ease: "easeInOut",delay:3}}
        className="fixed top-60 right-0 z-30 ">
           <div className="h-10 w-10 bg-white p-3 rounded-t" >
             <motion.img

@@ -13,7 +13,10 @@ const resources = {
       "portfolio": "portfolio",
       "contact": "Contact",
       "resume":"resume",
-      "blog":"blog"
+      "blog":"blog",
+      "Heyy":"Heyy",
+      "Thank you for comming":"Thank you for comming",
+      "I am full Stack Web Developer":"I am full Stack Web Developer"
       // ... other English translations
     }
   }
@@ -27,7 +30,10 @@ const resources = {
       "portfolio": "Portefølje",
       "contact": "Kontakt",
       "resume": "CV",
-      "blog": "Blogg"
+      "blog": "Blogg",
+      "Heyy":"Heyy",
+      "Thank you for comming":"Thank you for comming",
+      "I am full Stack Web Developer":"I am full Stack Web Developer"
       // ... other Norwegian translations
     }
   }
@@ -40,7 +46,10 @@ const resources = {
       "portfolio": "पोर्टफोलियो",
       "contact": "संपर्क करें",
       "resume": "बायोडाटा",
-      "blog": "ब्लॉग"
+      "blog": "ब्लॉग",
+      "Heyy":"Hello",
+      "Thank you for comming":"Thank you for comming",
+      "I am full Stack Web Developer":"I am full Stack Web Developer"
     }
   }
   ,
