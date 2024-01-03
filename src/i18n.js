@@ -28,11 +28,12 @@ const resources = {
   
   ,
   fr:// fr.json
-  {
+ // fr.json
+{
     "translation": {
       "home": "Accueil",
       "about": "À propos de moi",
-      "portfolio": "Portfolioosj",
+      "portfolio": "Portfolio",  // Fix the typo here
       "contact": "Contact",
       "welcome_message": "Bienvenue sur mon portfolio !",
       "about_me": "À propos de moi",
@@ -49,6 +50,7 @@ const resources = {
       // ... other French translations
     }
   }
+  
   
   ,
   // Add more languages and translations as needed
