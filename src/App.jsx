@@ -7,6 +7,7 @@ import Resume from "./pages/Resume/Resume";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
+import { I18nextProvider } from 'react-i18next';
 
 import HomeLayout from "./components/HomeLayout/HomeLayout";
 import { SideBarProvider } from "./context/SideBarProvider";
@@ -30,7 +31,9 @@ function App() {
       {isLoading ? (
         <Loading /> // Replace with your loading component or message
       ) : (
+
         <SettingsProvider>
+          <I18nextProvider>
         <SideBarProvider>
           <BrowserRouter>
             <Routes>
@@ -45,7 +48,9 @@ function App() {
             </Routes>
           </BrowserRouter>
         </SideBarProvider>
+        </I18nextProvider>
         </SettingsProvider> 
+
       )}
     </div>
   );
