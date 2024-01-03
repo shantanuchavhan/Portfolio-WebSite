@@ -44,10 +44,7 @@ const socialMediaIcons = [
 
 const SideBar = () => {
   const { t } = useTranslation();
-  // console.log('Current Language:', i18n.language);
-  // console.log('sectonName:', sectonName);
-  // console.log(sectonName,"sectionName") 
-  // console.log('Translated:', t(sectonName));
+
   const {color}=useSettingsContext()
   
   const location = useLocation();

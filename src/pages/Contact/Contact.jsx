@@ -40,7 +40,7 @@ const Contact = () => {
     };
 
     return (
-        <AnimatedSection Icon={Icon} sectionName={"Contact Me."}>
+        <AnimatedSection Icon={Icon} sectionName={"contact me"}>
             <section className="">
                 <div className="py-8 lg:py-12 lg:px-20 px-6 mx-auto max-w-screen-md">
                     <form onSubmit={handleSubmit} className="space-y-6">

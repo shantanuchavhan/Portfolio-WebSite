@@ -11,7 +11,7 @@ const portfolioUrls = [
   { route: "resume", icon: resumeIcon, label: "resume" },
   { route: "portfolio", icon: portfolioIcon, label: "portfolio" },
   { route: "blogs", icon: blogIcon, label: "blog" },
-  { route: "contact", icon: contactIcon, label: "contact" },
+  { route: "contact", icon: contactIcon, label: "contact me" },
 ];
 
 export default portfolioUrls;

@@ -11,7 +11,7 @@ const resources = {
       "home": "Home",
       "about me": "About Me",
       "portfolio": "portfolio",
-      "contact": "Contact",
+      "contact me": "Contact Me",
       "resume":"resume",
       "blog":"blog",
       "Heyy":"Heyy",

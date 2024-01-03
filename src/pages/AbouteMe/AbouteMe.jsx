@@ -4,7 +4,7 @@ import Icon from "../../images/profile.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 const AbouteMe = () => {
   return (
-    <AnimatedSection Icon={Icon} sectionName={"Aboute Me"}>
+    <AnimatedSection Icon={Icon} sectionName={"about me"}>
       <div className=" lg:flex  justify-between lg:gap-10 pt-6   h-5/6 ">
         <div className=" lg:w-3/5  text-start ">
           <h1 className="text-lg ">Full stack Web Developer </h1>

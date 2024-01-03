@@ -47,7 +47,7 @@ const Portfolio = () => {
   const sections = ["ALL", "WEBAPPS", "DASHBOARDS", "LANDINGPAGE"];
 
   return (
-    <AnimatedSection Icon={Icon} sectionName={"Portfolio"}>
+    <AnimatedSection Icon={Icon} sectionName={"portfolio"}>
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-center pt-10">
           <div className={`flex rounded-xl gap-2 border border-gray-300  border-dotted overflow-hidden  overflow-x-scroll ${style.scroll}`}>
