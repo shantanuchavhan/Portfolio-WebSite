@@ -19,7 +19,6 @@ const SettingsSection = ({setColor}) => {
                   <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
                         <option value="en">English</option>
                         <option value="no">Norwegian</option>
-                        <option value="sv">Swedish</option>
                         <option value="hi">Hindi</option>
                     </select>
                 </div>
