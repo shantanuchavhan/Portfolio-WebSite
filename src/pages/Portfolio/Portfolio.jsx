@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import style from "./style.module.css";
 import { useSettingsContext } from "../../context/SettingsProvider";
 import ReactLoading from "react-loading";
-import error from "../../images/error.jpg"
+import img from "../../images/error.jpg"
 
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
@@ -100,7 +100,7 @@ const Portfolio = () => {
           </motion.ul>
             ):error ?(
               <div className="flex items-center justify-center h-full pt-6">
-                <img className="h-20 w-20" src={error} alt="" />
+                <img className="h-20 w-20" src={ img} alt="" />
               
               </div>
               
