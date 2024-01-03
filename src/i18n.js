@@ -11,7 +11,7 @@ const resources = {
       "portfolio": "portfolio",
       "contact": "Contact",
       "welcome_message": "Welcome to my portfolio!",
-      "about_me": "About Me",
+      "Aboute Me": "About Me",
       "about_me_description": "I am a passionate developer with experience in...",
       "projects": "Projects",
       "project_name": "Project Name",
@@ -36,7 +36,7 @@ const resources = {
       "portfolio": "Portfolio",  // Fix the typo here
       "contact": "Contact",
       "welcome_message": "Bienvenue sur mon portfolio !",
-      "about_me": "À propos de moi",
+      "Aboute Me": "À propos de moi",
       "about_me_description": "Je suis un développeur passionné avec de l'expérience en...",
       "projects": "Projets",
       "project_name": "Nom du projet",
