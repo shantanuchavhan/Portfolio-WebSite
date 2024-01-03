@@ -9,7 +9,7 @@ const resources = {
   {
     "translation": {
       "home": "Home",
-      "about": "About Me",
+      "about me": "About Me",
       "portfolio": "portfolio",
       "contact": "Contact",
       "resume":"resume",
@@ -23,7 +23,7 @@ const resources = {
   {
     "translation": {
       "home": "Hjem",
-      "about": "Om meg",
+      "about me": "Om meg",
       "portfolio": "Portefølje",
       "contact": "Kontakt",
       "resume": "CV",
@@ -36,7 +36,7 @@ const resources = {
   {
     "translation": {
       "home": "होम",
-      "about": "मेरे बारे में",
+      "about me": "मेरे बारे में",
       "portfolio": "पोर्टफोलियो",
       "contact": "संपर्क करें",
       "resume": "बायोडाटा",
