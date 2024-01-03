@@ -7,12 +7,13 @@ import { useTranslation } from 'react-i18next';
 const Home = () => {
   const { t,i18n } = useTranslation();
   const [dilogues,setDilogues]=useState([t("Heyy"),t("Thank you for comming"),t("I am full Stack Web Developer")])
-  useEffect(()=>{
+  useEffect((t)=>{
+    console.log(t)
     console.log(i18n.language,"i18n.language")
     setDilogues((old)=>old.map((dilogue)=>{
       return t(dilogue)
     }))
-  },[i18n.language,t])
+  },[i18n.language])
   const { isOpen, setIsOpen } = useSideBarContext();
   
   useEffect(() => {
