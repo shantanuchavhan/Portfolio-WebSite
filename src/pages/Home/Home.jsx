@@ -8,6 +8,7 @@ const Home = () => {
   const { t,i18n } = useTranslation();
   const [dilogues,setDilogues]=useState(["Heyy","Thank you for comming","I am full Stack Web Developer"])
   useEffect(()=>{
+    console.log(i18n.language,"i18n.language")
     setDilogues((old)=>old.map((dilogue)=>{
       return t(dilogue)
     }))
@@ -17,6 +18,7 @@ const Home = () => {
   useEffect(() => {
     setIsOpen((old) => false);
   }, [setIsOpen]);
+  console.log(dilogues,"dilogues")
   return (
     <div className="flex items-center z-1 justify-center h-screen   relative">
       {isOpen && (
