@@ -1,12 +1,12 @@
-import React, {useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { useSideBarContext } from "../../context/SideBarProvider";
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t,i18n } = useTranslation();
-  const [dilogues,setDilogues]=useState([t("Heyy"),t("Thank you for comming"),t("I am full Stack Web Developer")])
+  const { t } = useTranslation();
+  const dilogues=[t("Heyy"),t("Thank you for comming"),t("I am full Stack Web Developer")]
   const { isOpen, setIsOpen } = useSideBarContext();
   
   useEffect(() => {
