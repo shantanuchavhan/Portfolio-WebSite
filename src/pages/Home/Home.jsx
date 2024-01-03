@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { useSideBarContext } from "../../context/SideBarProvider";
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
   const { isOpen, setIsOpen } = useSideBarContext();
   useEffect(() => {
     setIsOpen((old) => false);
@@ -37,13 +39,13 @@ const Home = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Heyy")
+                  .typeString(t("Heyy"))
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("Thank you for comming")
+                  .typeString(t("Thank you for comming"))
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("I am full Stack Web Developer")
+                  .typeString(t("I am full Stack Web Developer"))
                   .start();
               }}
             />

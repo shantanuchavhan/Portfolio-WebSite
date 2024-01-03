@@ -17,7 +17,7 @@ const resources = {
       // ... other English translations
     }
   }
-  
+
   ,
   no:// no.json
   {
