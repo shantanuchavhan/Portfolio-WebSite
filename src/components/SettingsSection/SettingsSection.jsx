@@ -16,10 +16,12 @@ const SettingsSection = ({setColor}) => {
                 </div>
                 <div>
                   <h4>choose language</h4>
-                  <div>
-                        <button onClick={() => changeLanguage('en')}>English</button>
-                        <button onClick={() => changeLanguage('fr')}>French</button>
-                  </div>
+                  <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
+                        <option value="en">English</option>
+                        <option value="no">Norwegian</option>
+                        <option value="sv">Swedish</option>
+                        <option value="hi">Hindi</option>
+                    </select>
                 </div>
     </div>
   )
