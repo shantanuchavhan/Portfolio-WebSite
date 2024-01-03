@@ -6,8 +6,7 @@ const Header = ({ Icon, sectonName }) => {
   const { t,i18n } = useTranslation();
   console.log('Current Language:', i18n.language);
   console.log('sectonName:', sectonName);
-  console.log(sectonName,"sectionName")
-  console.log('Translated:', t('about_me')); 
+  console.log(sectonName,"sectionName") 
   console.log('Translated:', t(sectonName));
   return (
     <div className="flex justify-between items-end  h-1/6 border-b border-dotted border-[#f8fee9] pt-10 lg:pt-6 py-2">
