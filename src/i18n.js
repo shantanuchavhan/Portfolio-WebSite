@@ -31,9 +31,9 @@ const resources = {
       "contact": "Kontakt",
       "resume": "CV",
       "blog": "Blogg",
-      "Heyy":"Heyy",
-      "Thank you for comming":"Thank you for comming",
-      "I am full Stack Web Developer":"I am full Stack Web Developer"
+      "Heyy": "Hei",
+    "Thank you for coming": "Takk for at du kom",
+    "I am Full Stack Web Developer": "Jeg er Full Stack Web-utvikler"
       // ... other Norwegian translations
     }
   }
@@ -47,9 +47,9 @@ const resources = {
       "contact": "संपर्क करें",
       "resume": "बायोडाटा",
       "blog": "ब्लॉग",
-      "Heyy":"Hello",
-      "Thank you for comming":"Thank you for comming",
-      "I am full Stack Web Developer":"I am full Stack Web Developer"
+      "Heyy": "नमस्ते",
+      "Thank you for coming": "आने के लिए धन्यवाद",
+      "I am Full Stack Web Developer": "मैं एक फुल स्टैक वेब डेवेलपर हूँ"
     }
   }
   ,
