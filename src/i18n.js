@@ -32,8 +32,8 @@ const resources = {
       "resume": "CV",
       "blog": "Blogg",
       "Heyy": "Hei",
-    "Thank you for coming": "Takk for at du kom",
-    "I am Full Stack Web Developer": "Jeg er Full Stack Web-utvikler"
+    "Thank you for comming": "Takk for at du kom",
+    "I am full Stack Web Developer": "Jeg er Full Stack Web-utvikler"
       // ... other Norwegian translations
     }
   }
