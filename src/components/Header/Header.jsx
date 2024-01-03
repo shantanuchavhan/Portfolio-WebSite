@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 
 const Header = ({ Icon, sectonName }) => {
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
+  console.log('Current Language:', i18n.language);
   console.log('sectonName:', sectonName);
   console.log('Translated:', t(sectonName));
   return (
