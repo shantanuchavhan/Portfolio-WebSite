@@ -43,7 +43,7 @@ const socialMediaIcons = [
 ];
 
 const SideBar = () => {
-  const { t,i18n } = useTranslation();
+  const { t } = useTranslation();
   // console.log('Current Language:', i18n.language);
   // console.log('sectonName:', sectonName);
   // console.log(sectonName,"sectionName") 
