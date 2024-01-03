@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const { t,i18n } = useTranslation();
-  const [dilogues,setDilogues]=useState(["Heyy","Thank you for comming","I am full Stack Web Developer"])
+  const [dilogues,setDilogues]=useState([t("Heyy"),t("Thank you for comming"),t("I am full Stack Web Developer")])
   useEffect(()=>{
     console.log(i18n.language,"i18n.language")
     setDilogues((old)=>old.map((dilogue)=>{
