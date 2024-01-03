@@ -48,8 +48,8 @@ const resources = {
       "resume": "बायोडाटा",
       "blog": "ब्लॉग",
       "Heyy": "नमस्ते",
-      "Thank you for coming": "आने के लिए धन्यवाद",
-      "I am Full Stack Web Developer": "मैं एक फुल स्टैक वेब डेवेलपर हूँ"
+      "Thank you for comming": "आने के लिए धन्यवाद",
+      "I am full Stack Web Developer": "मैं एक फुल स्टैक वेब डेवेलपर हूँ"
     }
   }
   ,
