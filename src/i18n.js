@@ -8,7 +8,7 @@ const resources = {
     "translation": {
       "home": "Home",
       "about": "About Me",
-      "portfolio": "Portfolio",
+      "portfolio": "portfolio",
       "contact": "Contact",
       "welcome_message": "Welcome to my portfolio!",
       "about_me": "About Me",
