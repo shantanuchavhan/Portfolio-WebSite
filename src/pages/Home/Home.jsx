@@ -5,8 +5,15 @@ import { useSideBarContext } from "../../context/SideBarProvider";
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
+  const [dilogues,setDilogues]=useState(["Heyy","Thank you for comming","I am full Stack Web Developer"])
+  useEffect(()=>{
+    setDilogues((old)=>old.map((dilogue)=>{
+      return t(dilogue)
+    }))
+  },[i18n.language,t])
   const { isOpen, setIsOpen } = useSideBarContext();
+  
   useEffect(() => {
     setIsOpen((old) => false);
   }, [setIsOpen]);
@@ -39,13 +46,13 @@ const Home = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(t("Heyy"))
+                  .typeString(dilogues[0])
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString(t("Thank you for comming"))
+                  .typeString(dilogues[1])
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString(t("I am full Stack Web Developer"))
+                  .typeString(dilogues[2])
                   .start();
               }}
             />
