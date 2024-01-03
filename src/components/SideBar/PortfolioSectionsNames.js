@@ -6,12 +6,12 @@ import blogIcon from "../../images/blog.png";
 import contactIcon from "../../images/email.png";
 
 const portfolioUrls = [
-  { route: "", icon: homeIcon, label: "HOME" },
-  { route: "about-me", icon: AbouteMeIcon, label: "ABOUT ME" },
-  { route: "resume", icon: resumeIcon, label: "RESUME" },
-  { route: "portfolio", icon: portfolioIcon, label: "PORTFOLIO" },
-  { route: "blogs", icon: blogIcon, label: "BLOG" },
-  { route: "contact", icon: contactIcon, label: "CONTACT" },
+  { route: "", icon: homeIcon, label: "home" },
+  { route: "about-me", icon: AbouteMeIcon, label: "about me" },
+  { route: "resume", icon: resumeIcon, label: "resume" },
+  { route: "portfolio", icon: portfolioIcon, label: "portfolio" },
+  { route: "blogs", icon: blogIcon, label: "blog" },
+  { route: "contact", icon: contactIcon, label: "contact" },
 ];
 
 export default portfolioUrls;

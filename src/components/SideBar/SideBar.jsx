@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { useLocation, Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import portfolioUrls from "./PortfolioSectionsNames";
 
 import ProfileImage from "../../images/profilepic.png";
@@ -42,6 +43,11 @@ const socialMediaIcons = [
 ];
 
 const SideBar = () => {
+  const { t,i18n } = useTranslation();
+  // console.log('Current Language:', i18n.language);
+  // console.log('sectonName:', sectonName);
+  // console.log(sectonName,"sectionName") 
+  // console.log('Translated:', t(sectonName));
   const {color}=useSettingsContext()
   
   const location = useLocation();
@@ -92,7 +98,7 @@ const SideBar = () => {
                   )}
                   <div className="flex items-center gap-2">
                     <img className="h-4 w-4" src={menuItem.icon} alt="" />
-                    <h5 className="text-sm">{menuItem.label}</h5>
+                    <h5 className="text-sm">{t(menuItem.label).toUpperCase()}</h5>
                   </div>
                 </div>
               </div>
