@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Header = ({ Icon, sectonName }) => {
   const { t} = useTranslation();
+  console.log(capitalizeFirstLetter(t(sectonName)),"sectonName")
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
