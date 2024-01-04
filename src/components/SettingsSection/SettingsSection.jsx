@@ -14,8 +14,9 @@ const SettingsSection = ({setColor}) => {
                   <div className="bg-red-300 h-4 w-4" onClick={()=>setColor("bg-red-300")}></div>
                   <div className="bg-blue-300 h-4 w-4" onClick={()=>setColor("bg-blue-300")}></div>
                 </div>
+                <h4>{t("choose language")}</h4>
                 <div>
-                  <h4>choose language</h4>
+                  
                   <select onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
                         <option value="en">English</option>
                         <option value="no">Norwegian</option>
