@@ -23,7 +23,9 @@ const resources = {
       "landingpage":"landingpage",
       "Total Projects":"Total Projects",
       "choose color":"choose color",
-      "choose language":"choose language"
+      "choose language":"choose language",
+      "Your email":"Your email",
+      "Subject":"Subject"
       // ... other English translations
     }
   }
@@ -48,6 +50,8 @@ const resources = {
     "Total Projects":"Totalt prosjekter",
     "choose color":"velg farge",
     "choose language":"Velg språk",
+    "Your email":"Din epost",
+    "Subject":"Emne"
       // ... other Norwegian translations
     }
   }
@@ -70,7 +74,11 @@ const resources = {
       "landingpage":"लैंडिंग पृष्ठ",
       "Total Projects":"कुल परियोजनाएँ",
       "choose color":"रंग पसंद करो",
-      "choose language":"भाषा चुनें"
+      "choose language":"भाषा चुनें",
+      "Your email":"आपका ईमेल",
+      "Subject":"विषय",
+      "Your message":"आपका संदेश",
+      "Send message":"मेसेज भेजें"
     }
   }
   ,

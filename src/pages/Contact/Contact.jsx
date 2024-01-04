@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Icon from "../../images/email.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 import { useSettingsContext } from "../../context/SettingsProvider";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const {t}=useTranslation()
     const {color}= useSettingsContext()
     const [formData, setFormData] = useState({
         email: "",
@@ -46,7 +48,7 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Your email
+                                {t("Your email")}
                             </label>
                             <input
                                 type="email"
@@ -61,7 +63,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                Subject
+                                {t("Subject")}
                             </label>
                             <input
                                 type="text"
@@ -76,7 +78,7 @@ const Contact = () => {
                         </div>
                         <div className="sm:col-span-2">
                             <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
-                                Your message
+                                {t("Your message")}
                             </label>
                             <textarea
                                 id="message"
