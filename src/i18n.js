@@ -27,8 +27,8 @@ const resources = {
       "Your email":"Your email",
       "Subject":"Subject",
       "Send message":"Send message",
-      "Let us know how we can help you":"Let us know how we can help you"
-      // ... other English translations
+      "Let us know how we can help you":"Let us know how we can help you",
+      "Leave a comment":"Leave a comment",
     }
   }
 
@@ -56,7 +56,7 @@ const resources = {
     "Subject":"Emne",
     "Send message":"Sende melding",
     "Let us know how we can help you":"Fortell oss hvordan vi kan hjelpe deg",
-
+    "Leave a comment":"Legg igjen en kommentar",
       // ... other Norwegian translations
     }
   }
@@ -84,7 +84,9 @@ const resources = {
       "Subject":"विषय",
       "Your message":"आपका संदेश",
       "Send message":"मेसेज भेजें",
-      "Let us know how we can help you":"हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं"
+      "Let us know how we can help you":"हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं",
+      "Leave a comment":"एक टिप्पणी छोड़ें",
+
     }
   }
   ,
