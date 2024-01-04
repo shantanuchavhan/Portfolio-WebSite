@@ -26,7 +26,8 @@ const resources = {
       "choose language":"choose language",
       "Your email":"Your email",
       "Subject":"Subject",
-      "Send message":"Send message"
+      "Send message":"Send message",
+      "Let us know how we can help you":"Let us know how we can help you"
       // ... other English translations
     }
   }
@@ -53,7 +54,9 @@ const resources = {
     "choose language":"Velg språk",
     "Your email":"Din epost",
     "Subject":"Emne",
-    "Send message":"Sende melding"
+    "Send message":"Sende melding",
+    "Let us know how we can help you":"Fortell oss hvordan vi kan hjelpe deg",
+
       // ... other Norwegian translations
     }
   }
@@ -80,7 +83,8 @@ const resources = {
       "Your email":"आपका ईमेल",
       "Subject":"विषय",
       "Your message":"आपका संदेश",
-      "Send message":"मेसेज भेजें"
+      "Send message":"मेसेज भेजें",
+      "Let us know how we can help you":"Fortell oss hvordan vi kan hjelpe deg"
     }
   }
   ,
