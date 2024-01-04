@@ -45,7 +45,7 @@ const Portfolio = () => {
     fetchProjects();
   }, [active]);
 
-  const sections = [t("all"), t("webapps"), t("dashboards"), t("landingpage")];
+  const sections = ["all","webapps", "dashboards", "landingpage"];
 
   return (
     <AnimatedSection Icon={Icon} sectionName={"portfolio"}>
@@ -101,6 +101,7 @@ const Portfolio = () => {
           </motion.ul>
             ):error ?(
               <div className="flex items-center justify-center h-full pt-6">
+                <h5>Oops something wrong!!</h5>
                 <img className="h-20 w-20" src={ img} alt="" />
               
               </div>
