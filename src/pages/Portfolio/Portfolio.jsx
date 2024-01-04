@@ -64,7 +64,7 @@ const Portfolio = () => {
                 } cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >
-                {section.toUpperCase()}
+                {t(section).toUpperCase()}
               </motion.div>
             ))}
           </div>
