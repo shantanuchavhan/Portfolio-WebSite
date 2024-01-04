@@ -20,7 +20,8 @@ const resources = {
       "all":"all",
       "webapps":"webapps",
       "dashboards":"dashboards",
-      "landingpage":"landingpage"
+      "landingpage":"landingpage",
+      "Total Projects":"Total Projects"
       // ... other English translations
     }
   }
@@ -41,7 +42,8 @@ const resources = {
     "all":"all",
     "webapps":"webapper",
     "dashboards":"dashbord",
-    "landingpage":"destinasjonsside"
+    "landingpage":"destinasjonsside",
+    "Total Projects":"Totalt prosjekter"
       // ... other Norwegian translations
     }
   }
@@ -61,7 +63,8 @@ const resources = {
       "all":"सभी",
       "webapps":"वेब ऐप्लिकेशन",
       "dashboards":"डैशबोर्ड",
-      "landingpage":"लैंडिंग पृष्ठ"
+      "landingpage":"लैंडिंग पृष्ठ",
+      "Total Projects":"कुल परियोजनाएँ"
     }
   }
   ,
