@@ -8,7 +8,7 @@ import ReactLoading from "react-loading";
 import img from "../../images/error.jpg"
 import { useTranslation } from 'react-i18next';
 const Portfolio = () => {
-  const [active, setActive] = useState("ALL");
+  const [active, setActive] = useState("all");
   const [projects, setProjects] = useState([]);
   const {color}=useSettingsContext()
   const [loading,setLoading]=useState(false)
