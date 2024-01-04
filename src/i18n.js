@@ -84,7 +84,7 @@ const resources = {
       "Subject":"विषय",
       "Your message":"आपका संदेश",
       "Send message":"मेसेज भेजें",
-      "Let us know how we can help you":"Fortell oss hvordan vi kan hjelpe deg"
+      "Let us know how we can help you":"हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं"
     }
   }
   ,
