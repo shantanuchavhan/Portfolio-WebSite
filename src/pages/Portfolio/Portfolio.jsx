@@ -44,7 +44,7 @@ const Portfolio = () => {
     fetchProjects();
   }, [active]);
 
-  const sections = ["ALL", "WEBAPPS", "DASHBOARDS", "LANDINGPAGE"];
+  const sections = [t("all"), t("webapps"), t("dashboards"), t("landingpage")];
 
   return (
     <AnimatedSection Icon={Icon} sectionName={"portfolio"}>
@@ -63,7 +63,7 @@ const Portfolio = () => {
                 } cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >
-                {section}
+                {section.toUpperCase()}
               </motion.div>
             ))}
           </div>

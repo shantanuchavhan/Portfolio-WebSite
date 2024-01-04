@@ -16,7 +16,11 @@ const resources = {
       "blog":"blog",
       "Heyy":"Heyy",
       "Thank you for comming":"Thank you for comming",
-      "I am full Stack Web Developer":"I am full Stack Web Developer"
+      "I am full Stack Web Developer":"I am full Stack Web Developer",
+      "all":"all",
+      "webapps":"webapps",
+      "dashboards":"dashboards",
+      "landingpage":"landingpage"
       // ... other English translations
     }
   }
@@ -33,7 +37,11 @@ const resources = {
       "blog": "Blogg",
       "Heyy": "Hei",
     "Thank you for comming": "Takk for at du kom",
-    "I am full Stack Web Developer": "Jeg er Full Stack Web-utvikler"
+    "I am full Stack Web Developer": "Jeg er Full Stack Web-utvikler",
+    "all":"all",
+    "webapps":"webapper",
+    "dashboards":"dashbord",
+    "landingpage":"destinasjonsside"
       // ... other Norwegian translations
     }
   }
@@ -49,7 +57,11 @@ const resources = {
       "blog": "ब्लॉग",
       "Heyy": "नमस्ते",
       "Thank you for comming": "आने के लिए धन्यवाद",
-      "I am full Stack Web Developer": "मैं एक फुल स्टैक वेब डेवेलपर हूँ"
+      "I am full Stack Web Developer": "मैं एक फुल स्टैक वेब डेवेलपर हूँ",
+      "all":"सभी",
+      "webapps":"वेब ऐप्लिकेशन",
+      "dashboards":"डैशबोर्ड",
+      "landingpage":"लैंडिंग पृष्ठ"
     }
   }
   ,
