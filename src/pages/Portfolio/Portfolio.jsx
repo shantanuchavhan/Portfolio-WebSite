@@ -20,7 +20,7 @@ const Portfolio = () => {
     const fetchProjects = async () => {
       setLoading((old)=>true)
       try {
-          if(active==="ALL"){
+          if(active==="all"){
             const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`)
             getResponse(response)
           }else{
