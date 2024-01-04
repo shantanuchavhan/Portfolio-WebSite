@@ -6,13 +6,14 @@ import style from "./style.module.css";
 import { useSettingsContext } from "../../context/SettingsProvider";
 import ReactLoading from "react-loading";
 import img from "../../images/error.jpg"
-
+import { useTranslation } from 'react-i18next';
 const Portfolio = () => {
   const [active, setActive] = useState("ALL");
   const [projects, setProjects] = useState([]);
   const {color}=useSettingsContext()
   const [loading,setLoading]=useState(false)
   const [error,setError]=useState(false)
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Fetch projects based on the selected section
