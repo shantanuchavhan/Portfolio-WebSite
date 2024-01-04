@@ -25,7 +25,8 @@ const resources = {
       "choose color":"choose color",
       "choose language":"choose language",
       "Your email":"Your email",
-      "Subject":"Subject"
+      "Subject":"Subject",
+      "Send message":"Send message"
       // ... other English translations
     }
   }
@@ -51,7 +52,8 @@ const resources = {
     "choose color":"velg farge",
     "choose language":"Velg språk",
     "Your email":"Din epost",
-    "Subject":"Emne"
+    "Subject":"Emne",
+    "Send message":"Sende melding"
       // ... other Norwegian translations
     }
   }
