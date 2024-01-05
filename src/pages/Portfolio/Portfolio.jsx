@@ -13,20 +13,21 @@ const Portfolio = () => {
   const {color}=useSettingsContext()
   const [loading,setLoading]=useState(false)
   const [error,setError]=useState(false)
-  const { t } = useTranslation();
+  const { t,i18n } = useTranslation();
 
   useEffect(() => {
     // Fetch projects based on the selected section
     const fetchProjects = async () => {
       setLoading((old)=>true)
       try {
-          if(active==="all"){
-            const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/`)
-            getResponse(response)
-          }else{
-            const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/`)
-            getResponse(response)
-          }
+        if (active === "all") {
+          const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/?language=${i18n.language}`);
+          getResponse(response);
+        } else {
+          const response = await fetch(`https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/?language=${i18n.language}`);
+          getResponse(response);
+        }
+        
           async function getResponse(response){
             if (response.ok) {
               const data = await response.json();
