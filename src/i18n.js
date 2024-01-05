@@ -38,6 +38,24 @@ const resources = {
   "aboutMe.embracingApproach": "Embracing a component-based and systematic approach, I ensure designs are not just faithfully replicated but also optimized for efficiency.",
   "aboutMe.letsCollaborate": "Let's collaborate",
   "aboutMe.dynamicReality": "to turn your digital vision into a dynamic reality!",
+  
+    "personalInfo.title": "Personal information",
+    "personalInfo.name": "Name",
+    "personalInfo.nameValue": "Shantanu Chavhan",
+    "personalInfo.age": "Age",
+    "personalInfo.ageValue": "23 Years",
+    "personalInfo.residence": "Residence",
+    "personalInfo.residenceValue": "Mumbai, Maharashtra",
+    "personalInfo.address": "Address",
+    "personalInfo.addressValue": "Mahavir Paradise Phase-3, Forest Naka, Ambernath",
+    "personalInfo.email": "Email",
+    "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
+    "personalInfo.phone": "Phone",
+    "personalInfo.phoneValue": "+91 9011793540",
+    "personalInfo.freelance": "Freelance",
+    "personalInfo.freelanceValue": "Available"
+  
+  
     }
   }
 
@@ -77,6 +95,24 @@ const resources = {
   "aboutMe.embracingApproach": "Ved å omfavne en komponentbasert og systematisk tilnærming, sørger jeg for at design ikke bare replikeres trofast, men også optimaliseres for effektivitet.",
   "aboutMe.letsCollaborate": "La oss samarbeide",
   "aboutMe.dynamicReality": "for å gjøre din digitale visjon til virkelighet!"
+  
+    "personalInfo.title": "Personal information",
+    "personalInfo.name": "Name",
+    "personalInfo.nameValue": "Shantanu Chavhan",
+    "personalInfo.age": "Age",
+    "personalInfo.ageValue": "23 Years",
+    "personalInfo.residence": "Residence",
+    "personalInfo.residenceValue": "Mumbai, Maharashtra",
+    "personalInfo.address": "Address",
+    "personalInfo.addressValue": "Mahavir Paradise Phase-3, Forest Naka, Ambernath",
+    "personalInfo.email": "Email",
+    "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
+    "personalInfo.phone": "Phone",
+    "personalInfo.phoneValue": "+91 9011793540",
+    "personalInfo.freelance": "Freelance",
+    "personalInfo.freelanceValue": "Available"
+  
+  
       // ... other Norwegian translations
     }
   }
@@ -116,7 +152,26 @@ const resources = {
       "aboutMe.focusOnCreating": "मेरा ध्यान पिक्सेल-सही, सभी उपकरण प्रतिसादी इंटरफेस बनाने पर है।",
       "aboutMe.embracingApproach": "एक घटक-आधारित और व्यवस्थित दृष्टिकोण को अपनाकर, मैं सुनिश्चित करता हूं कि डिजाइन को सिर्फ विश्वासपूर्वक पुनरावृत्ति किया जाता है बल्कि यह कुशलता के लिए भी अनुकूलित किया जाता है।",
       "aboutMe.letsCollaborate": "आइए सहयोग करें",
-      "aboutMe.dynamicReality": "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!"
+      "aboutMe.dynamicReality": "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!",
+      
+        "personalInfo.title": "व्यक्तिगत जानकारी",
+        "personalInfo.name": "नाम",
+        "personalInfo.nameValue": "शांतनु चव्हाण",
+        "personalInfo.age": "आयु",
+        "personalInfo.ageValue": "23 वर्ष",
+        "personalInfo.residence": "निवास",
+        "personalInfo.residenceValue": "मुंबई, महाराष्ट्र",
+        "personalInfo.address": "पता",
+        "personalInfo.addressValue": "महावीर पैराडाइस फेज-3, वन नाका, अंबरनाथ",
+        "personalInfo.email": "ईमेल",
+        "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
+        "personalInfo.phone": "फ़ोन",
+        "personalInfo.phoneValue": "+91 9011793540",
+        "personalInfo.freelance": "फ्रीलांस",
+        "personalInfo.freelanceValue": "उपलब्ध"
+        
+      
+      
     }
   },
   mr: {
@@ -152,7 +207,27 @@ const resources = {
   "aboutMe.focusOnCreating": "माझं ध्यान पिक्सेल-सही, सर्व डिव्हाइस प्रतिसादी इंटरफेस तयार करण्यावर आहे.",
   "aboutMe.embracingApproach": "एक कॉम्पोनेंट-आधारित आणि यंत्रणेसाठी योजना करण्यासाठी अभिवादन करताना, माझं ध्यान दिलेलं आहे की डिझाईन सिर्फ विश्वासपूर्वक पुनरावृत्ती होत नसे तरी कुशलतेसाठी सुधारित होतो.",
   "aboutMe.letsCollaborate": "आपल्याला सहयोग कसे करू शकतो हे आपल्याला सांगा",
-  "aboutMe.dynamicReality": "तुमचे डिजिटल दृष्टिकोण एक गतिशील वास्तविकतेत परिणाम होईल!"
+  "aboutMe.dynamicReality": "तुमचे डिजिटल दृष्टिकोण एक गतिशील वास्तविकतेत परिणाम होईल!",
+  
+    "personalInfo.title": "वैयक्तिक माहिती",
+    "personalInfo.name": "नाव",
+    "personalInfo.nameValue": "शांतनु चव्हाण",
+    "personalInfo.age": "वय",
+    "personalInfo.ageValue": "23 वर्षे",
+    "personalInfo.residence": "निवासस्थान",
+    "personalInfo.residenceValue": "मुंबई, महाराष्ट्र",
+    "personalInfo.address": "पत्ता",
+    "personalInfo.addressValue": "महावीर पॅराडाइस फेस-3, वन नाका, अंबरनाथ",
+    "personalInfo.email": "ईमेल",
+    "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
+    "personalInfo.phone": "फोन",
+    "personalInfo.phoneValue": "+91 9011793540",
+    "personalInfo.freelance": "स्वतंत्रपेंडिंग",
+    "personalInfo.freelanceValue": "उपलब्ध"
+  
+  
+      
+  
     }
   }
   
