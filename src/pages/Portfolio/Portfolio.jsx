@@ -44,7 +44,7 @@ const Portfolio = () => {
   };
 
     fetchProjects();
-  }, [active]);
+  }, [active,i18n.language]);
 
   const sections = ["all","webapps", "dashboards", "landingpage"];
 
