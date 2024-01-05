@@ -6,7 +6,7 @@ const resources = {
   en:
   {
     "translation": {
-      "Shantanu chavhan":"Shantanu chavhan",
+      "Shantanu Chavhan":"Shantanu Chavhan",
       "home": "Home",
       "about me": "About Me",
       "portfolio": "portfolio",
@@ -64,7 +64,7 @@ const resources = {
   no:// no.json
   {
     "translation": {
-      "Shantanu chavhan":"Shantanu chavhan",
+      "Shantanu Chavhan":"Shantanu chavhan",
       "home": "Hjem",
       "about me": "Om meg",
       "portfolio": "Portefølje",
@@ -122,7 +122,7 @@ const resources = {
   hi:
   {
     "translation": {
-      "Shantanu chavhan":"शंतनू चव्हाण",
+      "Shantanu Chavhan":"शंतनू चव्हाण",
       "home": "होम",
       "about me": "मेरे बारे में",
       "portfolio": "पोर्टफोलियो",
@@ -179,7 +179,7 @@ const resources = {
   },
   mr: {
     "translation": {
-      "Shantanu chavhan":"शंतनू चव्हाण",
+      "Shantanu Chavhan":"शंतनू चव्हाण",
       "home": "होम",
       "about me": "माझ्याबद्दल",
       "portfolio": "पोर्टफोलिओ",
