@@ -44,9 +44,7 @@ const socialMediaIcons = [
 
 const SideBar = () => {
   const { t } = useTranslation();
-
   const {color}=useSettingsContext()
-  
   const location = useLocation();
   const currentPath = location.pathname;
   const lastWord = currentPath.split("/").filter(Boolean).pop();
@@ -64,7 +62,7 @@ const SideBar = () => {
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 3, ease: "easeInOut" }}
     className="flex flex-col min-h-screen   bg-opacity-20 backdrop-filter backdrop-blur-md    items-center justify-between shadow-right text-gray-500 border-r-1 border-color-wheat">
-      {/* Profile Image and Name */}
+    
       <div>
         <div className="text-center relative">
           <img

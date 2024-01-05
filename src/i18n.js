@@ -3,8 +3,6 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 const resources = {
-
-  
   en:
   {
     "translation": {
@@ -86,9 +84,35 @@ const resources = {
       "Send message":"मेसेज भेजें",
       "Let us know how we can help you":"हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं",
       "Leave a comment":"एक टिप्पणी छोड़ें",
-
+    }
+  },
+  mr: {
+    "translation": {
+      "home": "होम",
+      "about me": "माझ्याबद्दल",
+      "portfolio": "पोर्टफोलिओ",
+      "contact me": "माझ्याशी संपर्क साधा",
+      "resume": "साक्षात्कारपत्र",
+      "blog": "ब्लॉग",
+      "Heyy": "हाय",
+      "Thank you for comming": "आभारी आहे की आपण आलात",
+      "I am full Stack Web Developer": "माझं पूर्ण स्टॅक वेब डेव्हलपर आहे",
+      "all": "सर्व",
+      "webapps": "वेब अॅप्लिकेशन्स",
+      "dashboards": "डॅशबोर्ड्स",
+      "landingpage": "लॅन्डिंग पेज",
+      "Total Projects": "एकूण परियोजना",
+      "choose color": "रंग निवडा",
+      "choose language": "भाषा निवडा",
+      "Your email": "तुमचा ईमेल",
+      "Subject": "विषय",
+      "Send message": "संदेश पाठवा",
+      "Let us know how we can help you": "आपल्याला कसे मदत करू शकतो",
+      "Leave a comment": "एक टिप्पणी द्या"
     }
   }
+  
+
   ,
   // Add more languages and translations as needed
 };
