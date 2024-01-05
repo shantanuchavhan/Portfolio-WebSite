@@ -94,7 +94,7 @@ const resources = {
   "aboutMe.focusOnCreating": "Fokuset mitt er å lage piksel-perfekte, responsivt grensesnitt for alle enheter.",
   "aboutMe.embracingApproach": "Ved å omfavne en komponentbasert og systematisk tilnærming, sørger jeg for at design ikke bare replikeres trofast, men også optimaliseres for effektivitet.",
   "aboutMe.letsCollaborate": "La oss samarbeide",
-  "aboutMe.dynamicReality": "for å gjøre din digitale visjon til virkelighet!"
+  "aboutMe.dynamicReality": "for å gjøre din digitale visjon til virkelighet!",
   
     "personalInfo.title": "Personal information",
     "personalInfo.name": "Name",
