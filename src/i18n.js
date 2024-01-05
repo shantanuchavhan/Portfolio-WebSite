@@ -27,6 +27,17 @@ const resources = {
       "Send message":"Send message",
       "Let us know how we can help you":"Let us know how we can help you",
       "Leave a comment":"Leave a comment",
+      "aboutMe.title": "About me",
+  "aboutMe.fullStackDeveloper": "Full Stack Web Developer",
+  "aboutMe.greetings": "Greetings!",
+  "aboutMe.specializingIn": "I'm a skilled Full Stack Web Developer specializing in",
+  "aboutMe.technologies": "React, Express.js, Next js, Tailwind, Css, MongoDB, Sql, Node.js.",
+  "aboutMe.passionForCrafting": "With a passion for crafting seamless digital experiences, I excel in",
+  "aboutMe.replicatingDesigns": "replicating intricate designs and optimizing solutions.",
+  "aboutMe.focusOnCreating": "My focus is on creating pixel-perfect, All device responsive interfaces.",
+  "aboutMe.embracingApproach": "Embracing a component-based and systematic approach, I ensure designs are not just faithfully replicated but also optimized for efficiency.",
+  "aboutMe.letsCollaborate": "Let's collaborate",
+  "aboutMe.dynamicReality": "to turn your digital vision into a dynamic reality!",
     }
   }
 
@@ -55,6 +66,17 @@ const resources = {
     "Send message":"Sende melding",
     "Let us know how we can help you":"Fortell oss hvordan vi kan hjelpe deg",
     "Leave a comment":"Legg igjen en kommentar",
+    "aboutMe.title": "Om meg",
+  "aboutMe.fullStackDeveloper": "Full Stack Web Developer",
+  "aboutMe.greetings": "Hei!",
+  "aboutMe.specializingIn": "Jeg er en dyktig Full Stack Web Developer som spesialiserer meg i",
+  "aboutMe.technologies": "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
+  "aboutMe.passionForCrafting": "Med lidenskap for å skape sømløse digitale opplevelser, utmerker jeg meg i",
+  "aboutMe.replicatingDesigns": "replikere intrikate design og optimalisere løsninger.",
+  "aboutMe.focusOnCreating": "Fokuset mitt er å lage piksel-perfekte, responsivt grensesnitt for alle enheter.",
+  "aboutMe.embracingApproach": "Ved å omfavne en komponentbasert og systematisk tilnærming, sørger jeg for at design ikke bare replikeres trofast, men også optimaliseres for effektivitet.",
+  "aboutMe.letsCollaborate": "La oss samarbeide",
+  "aboutMe.dynamicReality": "for å gjøre din digitale visjon til virkelighet!"
       // ... other Norwegian translations
     }
   }
@@ -84,6 +106,17 @@ const resources = {
       "Send message":"मेसेज भेजें",
       "Let us know how we can help you":"हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं",
       "Leave a comment":"एक टिप्पणी छोड़ें",
+      "aboutMe.title": "मेरे बारे में",
+      "aboutMe.fullStackDeveloper": "पूर्ण स्टैक वेब डेवेलपर",
+      "aboutMe.greetings": "नमस्कार!",
+      "aboutMe.specializingIn": "मैं एक कुशल पूर्ण स्टैक वेब डेवेलपर हूं जो इसमें विशेषज्ञ है",
+      "aboutMe.technologies": "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
+      "aboutMe.passionForCrafting": "सीमित डिजिटल अनुभवों को बनाने के लिए जोश के साथ, मैं उत्कृष्ट हूं",
+      "aboutMe.replicatingDesigns": "जटिल डिजाइन की पुनरावृत्ति और समाधानों को अनुकूलित करना।",
+      "aboutMe.focusOnCreating": "मेरा ध्यान पिक्सेल-सही, सभी उपकरण प्रतिसादी इंटरफेस बनाने पर है।",
+      "aboutMe.embracingApproach": "एक घटक-आधारित और व्यवस्थित दृष्टिकोण को अपनाकर, मैं सुनिश्चित करता हूं कि डिजाइन को सिर्फ विश्वासपूर्वक पुनरावृत्ति किया जाता है बल्कि यह कुशलता के लिए भी अनुकूलित किया जाता है।",
+      "aboutMe.letsCollaborate": "आइए सहयोग करें",
+      "aboutMe.dynamicReality": "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!"
     }
   },
   mr: {
@@ -108,7 +141,18 @@ const resources = {
       "Subject": "विषय",
       "Send message": "संदेश पाठवा",
       "Let us know how we can help you": "आपल्याला कसे मदत करू शकतो",
-      "Leave a comment": "एक टिप्पणी द्या"
+      "Leave a comment": "एक टिप्पणी द्या",
+      "aboutMe.title": "माझ्याबद्दल",
+  "aboutMe.fullStackDeveloper": "पूर्ण स्टॅक वेब डेव्हलपर",
+  "aboutMe.greetings": "हाय",
+  "aboutMe.specializingIn": "माझं कल्याणकारी पूर्ण स्टॅक वेब डेव्हलपर आहे, त्यात स्पेशलाईझिंग करीत आहे",
+  "aboutMe.technologies": "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
+  "aboutMe.passionForCrafting": "सुंदर डिजिटल अनुभवे तयार करण्याच्या उत्कृष्टतेसाठी, माझं उत्साह आहे, मी उत्कृष्टतेत उत्कृष्ट आहे।",
+  "aboutMe.replicatingDesigns": "सुक्ष्म डिझाईनस कॉपी करणे आणि समाधाने अपघातकी बनविणे.",
+  "aboutMe.focusOnCreating": "माझं ध्यान पिक्सेल-सही, सर्व डिव्हाइस प्रतिसादी इंटरफेस तयार करण्यावर आहे.",
+  "aboutMe.embracingApproach": "एक कॉम्पोनेंट-आधारित आणि यंत्रणेसाठी योजना करण्यासाठी अभिवादन करताना, माझं ध्यान दिलेलं आहे की डिझाईन सिर्फ विश्वासपूर्वक पुनरावृत्ती होत नसे तरी कुशलतेसाठी सुधारित होतो.",
+  "aboutMe.letsCollaborate": "आपल्याला सहयोग कसे करू शकतो हे आपल्याला सांगा",
+  "aboutMe.dynamicReality": "तुमचे डिजिटल दृष्टिकोण एक गतिशील वास्तविकतेत परिणाम होईल!"
     }
   }
   
