@@ -77,7 +77,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 100, color: "white" }}
             animate={{ opacity: 1, y: 0, color: "white" }}
             transition={{ duration: 2, ease: "easeInOut", delay: 6 }}
-            className={`border border-${color} p-21`}
+            className={`border border-${color} p-2`}
           >
             Hire me
           </motion.h1>

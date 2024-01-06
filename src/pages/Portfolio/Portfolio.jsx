@@ -69,7 +69,7 @@ const Portfolio = () => {
                 transition={{ duration: 2, ease: "easeInOut" }}
                 key={index}
                 className={`${
-                  active === section ? color : ""
+                  active === section ? `bg-${color}` : ""
                 } cursor-pointer  p-3 rounded-lg hover`}
                 onClick={() => setActive(section)}
               >
