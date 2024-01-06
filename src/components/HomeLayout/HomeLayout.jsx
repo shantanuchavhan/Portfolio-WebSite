@@ -1,22 +1,21 @@
-import React, { useEffect ,useState} from "react";
+import React, { useEffect, useState } from "react";
 import SideBar from "../SideBar/SideBar";
 import { Outlet } from "react-router-dom";
 import { useSideBarContext } from "../../context/SideBarProvider";
 import { useSettingsContext } from "../../context/SettingsProvider";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
-import settings from "../../images/settings.png"
+import settings from "../../images/settings.png";
 import SettingsSection from "../SettingsSection/SettingsSection";
 
 const HomeLayout = () => {
   const { isOpen, setIsOpen } = useSideBarContext();
-  const {color,setColor}=useSettingsContext()
-  const [showSettings,setShowSettings]=useState(false)
+  const { color, setColor } = useSettingsContext();
+  const [showSettings, setShowSettings] = useState(false);
   const spinTransition = {
     loop: Infinity,
     ease: "easeIn",
-    duration: 20
-    
+    duration: 20,
   };
 
   const toggleMenu = () => {
@@ -40,9 +39,9 @@ const HomeLayout = () => {
   return (
     <div className="flex">
       <motion.div
-         initial={{ opacity: 0, x: 0 }}
-         animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 3, ease: "easeInOut",delay: 2  }}
+        initial={{ opacity: 0, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 3, ease: "easeInOut", delay: 2 }}
         className={`lg:hidden fixed top-0 left-0 px-4 py-2 z-20 ${color} opacity-50 border border-b w-screen ${
           isOpen ? "open" : ""
         }`}
@@ -53,28 +52,24 @@ const HomeLayout = () => {
         <div className="line h-1 w-6 bg-gray-700 my-1"></div>
       </motion.div>
       <motion.div
-         initial={{ opacity: 0, x: 0 }}
-         animate={{ opacity: 1, x: 0 }}
-         transition={{ duration: 3, ease: "easeInOut",delay:3}}
-       className="fixed top-60 right-0 z-30 ">
-          <div className="h-10 w-10 bg-white p-3 rounded-t" >
-            <motion.img
-                animate={{ rotate: 360, scale: [1,2,1,2,1,2] }}
-                transition={spinTransition}
-                onClick={()=>setShowSettings((old)=>!old)} src={settings} alt="" ></motion.img>
-           </div>
-           {
-            showSettings?
-            (
-              <SettingsSection setColor={setColor}/>
-            ):""
-           }
-            
-            
-          <div>
+        initial={{ opacity: 0, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 3, ease: "easeInOut", delay: 3 }}
+        className="fixed top-60 right-0 z-30 "
+      >
+        <div className="h-10 w-10 bg-white p-3 rounded-t">
+          <motion.img
+            animate={{ rotate: 360, scale: [1, 2, 1, 2, 1, 2] }}
+            transition={spinTransition}
+            onClick={() => setShowSettings((old) => !old)}
+            src={settings}
+            alt=""
+          ></motion.img>
+        </div>
+        {showSettings ? <SettingsSection setColor={setColor} /> : ""}
 
-          </div>
-        </motion.div>
+        <div></div>
+      </motion.div>
       <div
         className={`${
           isOpen ? "block " : "hidden  w-1/6"

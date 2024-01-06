@@ -2,18 +2,24 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { useSideBarContext } from "../../context/SideBarProvider";
-import { useTranslation } from 'react-i18next';
+import { useSettingsContext } from "../../context/SettingsProvider";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
-  const dilogues=[t("Heyy"),t("Thank you for comming"),t("I am full Stack Web Developer")]
+  const {color}=useSettingsContext()
+  const dilogues = [
+    t("Heyy"),
+    t("Thank you for comming"),
+    t("I am full Stack Web Developer"),
+  ];
   const { isOpen, setIsOpen } = useSideBarContext();
-  
+
   useEffect(() => {
     setIsOpen((old) => false);
   }, [setIsOpen]);
-  console.log(dilogues,"dilogues")
+  console.log(dilogues, "dilogues");
   return (
     <div className="flex items-center z-1 justify-center h-screen   relative">
       {isOpen && (
@@ -30,18 +36,17 @@ const Home = () => {
 
         <motion.div
           initial={{ opacity: 0, x: -100, color: "white" }}
-          animate={{ opacity: 1, x: [-100,0], y:[0], color: "wheat" }}
+          animate={{ opacity: 1, x: [-100, 0], y: [0], color: "wheat" }}
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
           className="text-center"
         >
-          <h1 className=" text-[43px] text-white bg-transparent">{t(
-            "Shantanu Chavhan"
-          )}</h1>
+          <h1 className=" text-[43px] text-white bg-transparent">
+            {t("Shantanu Chavhan")}
+          </h1>
           <motion.div
             initial={{ opacity: 0, x: -100, color: "white" }}
             animate={{ opacity: 1, x: 0, color: "wheat" }}
             transition={{ duration: 1, ease: "easeIn", delay: 2 }}
-            
           >
             <Typewriter
               onInit={(typewriter) => {
@@ -59,32 +64,33 @@ const Home = () => {
           </motion.div>
         </motion.div>
         <motion.div
-           initial={{ opacity: 0, y: 100, color: "white" }}
-           animate={{ opacity: 1, y: 0, color: "white" }}
-           transition={{duration:2,ease: "easeIn", delay: 5}}
-           className="text-center"
+          initial={{ opacity: 0, y: 100, color: "white" }}
+          animate={{ opacity: 1, y: 0, color: "white" }}
+          transition={{ duration: 2, ease: "easeIn", delay: 5 }}
+          className="text-center"
         >
           <h1>Your satisfaction is my satisfaction.</h1>
         </motion.div>
-       
-        <Link to={"/contact"}>
-        <motion.h1
-          initial={{ opacity: 0, y: 100, color: "white" }}
-          animate={{ opacity: 1, y: 0, color: "white" }}
-          transition={{duration:2,ease: "easeInOut", delay: 6}}
-          className="border border-blue-300 p-2"
 
+        <Link to={"/contact"}>
+          <motion.h1
+            initial={{ opacity: 0, y: 100, color: "white" }}
+            animate={{ opacity: 1, y: 0, color: "white" }}
+            transition={{ duration: 2, ease: "easeInOut", delay: 6 }}
+            className={`border border-${color} p-21`}
           >
-            Hire me.</motion.h1>
+            Hire me
+          </motion.h1>
         </Link>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
-          transition={{duration:2,ease: "easeInOut", delay: 7}}
-          onClick={()=>setIsOpen(true)} className="lg:hidden border border-blue-300 p-2 "
-          
-          >Explore.</motion.h1>
-
+          transition={{ duration: 2, ease: "easeInOut", delay: 7 }}
+          onClick={() => setIsOpen(true)}
+          className={`lg:hidden border border-${color} p-2`}
+        >
+          Explore
+        </motion.h1>
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
         <video

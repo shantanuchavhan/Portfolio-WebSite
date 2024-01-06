@@ -7,7 +7,7 @@ import Resume from "./pages/Resume/Resume";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
-import { I18nextProvider } from 'react-i18next';
+import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 
 import HomeLayout from "./components/HomeLayout/HomeLayout";
@@ -28,30 +28,32 @@ function App() {
   }, []);
 
   return (
-    <div className={`App w-screen relative h-screen ${isLoading ? 'overflow-hidden' : ''}`}>
+    <div
+      className={`App w-screen relative h-screen ${
+        isLoading ? "overflow-hidden" : ""
+      }`}
+    >
       {isLoading ? (
         <Loading /> // Replace with your loading component or message
       ) : (
-
         <SettingsProvider>
           <I18nextProvider i18n={i18n}>
-        <SideBarProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<HomeLayout />}>
-                <Route index element={<Home />} />
-                <Route path="about-me" element={<AbouteMe />} />
-                <Route path="resume" element={<Resume />} />
-                <Route path="portfolio" element={<Portfolio />} />
-                <Route path="blogs" element={<Blog />} />
-                <Route path="contact" element={<Contact />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
-        </SideBarProvider>
-        </I18nextProvider>
-        </SettingsProvider> 
-
+            <SideBarProvider>
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<HomeLayout />}>
+                    <Route index element={<Home />} />
+                    <Route path="about-me" element={<AbouteMe />} />
+                    <Route path="resume" element={<Resume />} />
+                    <Route path="portfolio" element={<Portfolio />} />
+                    <Route path="blogs" element={<Blog />} />
+                    <Route path="contact" element={<Contact />} />
+                  </Route>
+                </Routes>
+              </BrowserRouter>
+            </SideBarProvider>
+          </I18nextProvider>
+        </SettingsProvider>
       )}
     </div>
   );

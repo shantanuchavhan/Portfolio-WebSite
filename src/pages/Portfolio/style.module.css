@@ -1,4 +1,4 @@
 .scroll::-webkit-scrollbar {
-    width: 0px;
-    display:none
-  }
+  width: 0px;
+  display: none;
+}
