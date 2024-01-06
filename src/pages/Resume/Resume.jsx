@@ -5,8 +5,8 @@ import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 
 const Resume = () => {
   return <AnimatedSection Icon={Icon} sectionName={"resume"}>
-    <div>
-      <div>
+    <div className="flex justify-between">
+      <div >
         <h1>Education :- </h1>
           <div>
             <h1>Bachler of Electronic Engineering</h1>
@@ -26,7 +26,7 @@ const Resume = () => {
       </div>
       <div>
         <h1>Experiance</h1>
-        
+
 
       </div>
     </div>
