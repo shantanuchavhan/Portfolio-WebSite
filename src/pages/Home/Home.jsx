@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { useSideBarContext } from "../../context/SideBarProvider";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -66,12 +67,15 @@ const Home = () => {
           <h1>Your satisfaction is my satisfaction.</h1>
         </motion.div>
        
+        <Link to={"/contact"}>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{duration:2,ease: "easeInOut", delay: 6}}
           className="border border-blue-300 p-2"
-          >Hire me.</motion.h1>
+          >
+            Hire me.</motion.h1>
+        </Link>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
