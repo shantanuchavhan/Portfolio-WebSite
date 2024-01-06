@@ -18,7 +18,7 @@ const Home = () => {
       {isOpen && (
         <div className="fixed inset-0 bg-black z-8 opacity-75  min-h-screen"></div>
       )}
-      <div className="relative  flex items-center justify-center ">
+      <div className="relative  flex flex-col gap-3  items-center justify-center ">
         <motion.div
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
@@ -55,7 +55,8 @@ const Home = () => {
               }}
             />
           </motion.div>
-          <motion.div
+        </motion.div>
+        <motion.div
            initial={{ opacity: 0, y: 100, color: "white" }}
            animate={{ opacity: 1, y: 0, color: "white" }}
            transition={{ delay: 2.5 }}
@@ -64,8 +65,6 @@ const Home = () => {
           <h1>Hire me Now.</h1>
           <h1 onClick={()=>setIsOpen(true)}>Explore</h1>
         </motion.div>
-        </motion.div>
-       
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
         <video
