@@ -37,8 +37,8 @@ const Home = () => {
             "Shantanu Chavhan"
           )}</h1>
           <motion.div
-            initial={{ opacity: 0, y: 100, color: "white" }}
-            animate={{ opacity: 1, y: 0, color: "white" }}
+            
+            animate={{ opacity: 1, x: [-100,0,0], y:[0,0,-100],  color: "white" }}
             transition={{ delay: 2.5 }}
           >
             <Typewriter
