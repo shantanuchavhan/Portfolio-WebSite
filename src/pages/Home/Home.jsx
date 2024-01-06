@@ -72,7 +72,8 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{duration:2,ease: "easeInOut", delay: 6}}
-          className="border border-blue-300 p-2"
+          className="border border-blue-300 p-2 w-full"
+
           >
             Hire me.</motion.h1>
         </Link>
@@ -80,7 +81,8 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{duration:2,ease: "easeInOut", delay: 7}}
-          onClick={()=>setIsOpen(true)} className="lg:hidden border border-blue-300 p-2"
+          onClick={()=>setIsOpen(true)} className="lg:hidden border border-blue-300 p-2 w-full"
+          
           >Explore.</motion.h1>
 
       </div>
