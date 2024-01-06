@@ -59,6 +59,7 @@ const Home = () => {
            initial={{ opacity: 0, y: 100, color: "white" }}
            animate={{ opacity: 1, y: 0, color: "white" }}
            transition={{ delay: 7 }}
+           className="text-center"
         >
           <h1>Your satisfaction is my satisfaction.</h1>
           <h1>Hire me Now.</h1>
