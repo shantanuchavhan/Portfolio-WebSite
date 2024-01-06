@@ -22,7 +22,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 5, ease: "easeInOut" }}
+          transition={{ duration: 6, ease: "easeIn" }}
         >
           <div className="fixed inset-0 bg-black z-[-1] opacity-50 h-screen h-screen"></div>
         </motion.div>
@@ -58,7 +58,7 @@ const Home = () => {
         <motion.div
            initial={{ opacity: 0, y: 100, color: "white" }}
            animate={{ opacity: 1, y: 0, color: "white" }}
-           transition={{ delay: 7 }}
+           transition={{ease: "easeIn", delay: 7}}
            className="text-center"
         >
           <h1>Your satisfaction is my satisfaction.</h1>
