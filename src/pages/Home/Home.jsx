@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const { t } = useTranslation();
   const {color}=useSettingsContext()
+  console.log(color,"color")
   const dilogues = [
     t("Heyy"),
     t("Thank you for comming"),
