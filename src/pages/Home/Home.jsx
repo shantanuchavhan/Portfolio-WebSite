@@ -29,7 +29,7 @@ const Home = () => {
 
         <motion.div
           initial={{ opacity: 0, x: -100, color: "white" }}
-          animate={{ opacity: 1, x: 0, color: "wheat" }}
+          animate={{ opacity: 1, x: [-100,0,0], y:[0,0,-100], color: "wheat" }}
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
           className="text-center"
         >
@@ -55,6 +55,16 @@ const Home = () => {
               }}
             />
           </motion.div>
+        </motion.div>
+        <motion.div
+           initial={{ opacity: 0, y: 100, color: "white" }}
+           animate={{ opacity: 1, y: 0, color: "white" }}
+           transition={{ delay: 2.5 }}
+        >
+          <h1>Your satisfaction is my satisfaction.</h1>
+          <h1>Hire me Now.</h1>
+          <h1 onClick={()=>setIsOpen(true)}>Explore</h1>
+
         </motion.div>
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
