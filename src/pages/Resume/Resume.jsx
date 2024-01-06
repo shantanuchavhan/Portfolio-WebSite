@@ -4,11 +4,13 @@ import Icon from "../../images/cv.png";
 import AnimatedSection from "../../components/AnimatedSection/AnimatedSection";
 
 const Resume = () => {
+
   return <AnimatedSection Icon={Icon} sectionName={"resume"}>
-    <div className="flex justify-between pt-6">
-      <div className="flex flex-col gap-2">
+    <div className="lg:flex justify-between pt-6">
+      <div className="flex flex-col gap-3">
         <h1>Education :- </h1>
-          <div>
+         <div className="flex flexcol gap-2">
+         <div>
             <h1>Bachler of Electronic Engineering</h1>
             <h2>From:2019 to 2022</h2>
             <h2>Score:7.6 CGPA</h2>
@@ -23,6 +25,8 @@ const Resume = () => {
             <h2>From:2015 to 2016</h2>
             <h2>Score:82.80 % </h2>
           </div>
+
+        </div> 
       </div>
       <div>
         <h1>Experiance</h1>
