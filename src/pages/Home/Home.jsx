@@ -38,8 +38,7 @@ const Home = () => {
           )}</h1>
           <motion.div
             
-            animate={{ opacity: 1, x: [-100,0,0], y:[0,0,-100],  color: "white" }}
-            transition={{ delay: 2.5 }}
+            
           >
             <Typewriter
               onInit={(typewriter) => {
