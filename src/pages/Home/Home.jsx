@@ -33,7 +33,7 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeIn", delay: 1 }}
           className="text-center"
         >
-          <h1 className=" text-[43px] bg-transparent">{t(
+          <h1 className=" text-[43px] text-white bg-transparent">{t(
             "Shantanu Chavhan"
           )}</h1>
           <motion.div
