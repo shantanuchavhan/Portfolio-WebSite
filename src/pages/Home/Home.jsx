@@ -70,13 +70,13 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{duration:2,ease: "easeInOut", delay: 6}}
-          className="border border-blue-300"
+          className="border border-blue-300 p-2"
           >Hire me.</motion.h1>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{duration:2,ease: "easeInOut", delay: 7}}
-          onClick={()=>setIsOpen(true)} className="lg:hidden border border-blue-300"
+          onClick={()=>setIsOpen(true)} className="lg:hidden border border-blue-300 p-2"
           >Explore.</motion.h1>
 
       </div>
