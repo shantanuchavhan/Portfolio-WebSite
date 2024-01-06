@@ -22,7 +22,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3, ease: "easeInOut" }}
+          transition={{ duration: 5, ease: "easeInOut" }}
         >
           <div className="fixed inset-0 bg-black z-[-1] opacity-50 h-screen h-screen"></div>
         </motion.div>
@@ -58,7 +58,7 @@ const Home = () => {
         <motion.div
            initial={{ opacity: 0, y: 100, color: "white" }}
            animate={{ opacity: 1, y: 0, color: "white" }}
-           transition={{ delay: 2.5 }}
+           transition={{ delay: 7 }}
         >
           <h1>Your satisfaction is my satisfaction.</h1>
           <h1>Hire me Now.</h1>
