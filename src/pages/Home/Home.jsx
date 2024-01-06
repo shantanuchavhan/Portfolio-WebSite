@@ -37,7 +37,9 @@ const Home = () => {
             "Shantanu Chavhan"
           )}</h1>
           <motion.div
-            
+            initial={{ opacity: 0, x: -100, color: "white" }}
+            animate={{ opacity: 1, x: 0, color: "wheat" }}
+            transition={{ duration: 1, ease: "easeIn", delay: 1 }}
             
           >
             <Typewriter
@@ -58,7 +60,7 @@ const Home = () => {
         <motion.div
            initial={{ opacity: 0, y: 100, color: "white" }}
            animate={{ opacity: 1, y: 0, color: "white" }}
-           transition={{ease: "easeIn", delay: 5}}
+           transition={{duration:2,ease: "easeIn", delay: 5}}
            className="text-center"
         >
           <h1>Your satisfaction is my satisfaction.</h1>
@@ -67,12 +69,12 @@ const Home = () => {
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
-          transition={{ease: "easeIn", delay: 6}}
+          transition={{duration:2,ease: "easeInOut", delay: 6}}
           >Hire me.</motion.h1>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
-          transition={{ease: "easeIn", delay: 7}}
+          transition={{duration:2,ease: "easeInOut", delay: 7}}
           onClick={()=>setIsOpen(true)} className="lg:hidden"
           >Explore.</motion.h1>
 
