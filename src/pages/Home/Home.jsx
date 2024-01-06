@@ -63,6 +63,8 @@ const Home = () => {
         >
           <h1>Your satisfaction is my satisfaction.</h1>
           <motion.h1
+          initial={{ opacity: 0, y: 100, color: "white" }}
+          animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ease: "easeIn", delay: 1}}
           >Hire me Now.</motion.h1>
           <h1 onClick={()=>setIsOpen(true)} className="lg:hidden">Explore</h1>
