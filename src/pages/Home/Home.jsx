@@ -62,21 +62,19 @@ const Home = () => {
            className="text-center"
         >
           <h1>Your satisfaction is my satisfaction.</h1>
-          
-          
         </motion.div>
-        <h1 >Explore</h1>
+       
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ease: "easeIn", delay: 6}}
-          >Hire me Now.</motion.h1>
+          >Hire me.</motion.h1>
         <motion.h1
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ease: "easeIn", delay: 7}}
           onClick={()=>setIsOpen(true)} className="lg:hidden"
-          >Hire me Now.</motion.h1>
+          >Explore.</motion.h1>
 
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
