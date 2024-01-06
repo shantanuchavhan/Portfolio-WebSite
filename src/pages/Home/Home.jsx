@@ -62,7 +62,7 @@ const Home = () => {
         >
           <h1>Your satisfaction is my satisfaction.</h1>
           <h1>Hire me Now.</h1>
-          <h1 onClick={()=>setIsOpen(true)}>Explore</h1>
+          <h1 onClick={()=>setIsOpen(true)} className="lg:hidden">Explore</h1>
         </motion.div>
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
