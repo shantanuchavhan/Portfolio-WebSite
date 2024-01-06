@@ -15,9 +15,9 @@ const AbouteMe = () => {
             <p className="text-gray-500 text-[18px]">
               <span className="text-gray-300">{t('aboutMe.greetings')}</span> {t('aboutMe.specializingIn')}{' '}
               <span className="text-gray-300">{t('aboutMe.technologies')}</span>. {t('aboutMe.passionForCrafting')}{' '}
-              {t('aboutMe.replicatingDesigns')} {t('aboutMe.optimizingSolutions')}. {t('aboutMe.focusOnCreating')}{' '}
+              {t('aboutMe.replicatingDesigns')}. {t('aboutMe.focusOnCreating')}{' '}
              
-              {t('aboutMe.embracingApproach')}, {t('aboutMe.optimizedForEfficiency')}.
+              {t('aboutMe.embracingApproach')},
               <span className="text-gray-300"> {t('aboutMe.letsCollaborate')}</span> {t('aboutMe.dynamicReality')}
             </p>
           </div>
