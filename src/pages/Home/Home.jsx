@@ -40,7 +40,7 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0, x: -100, color: "white" }}
             animate={{ opacity: 1, x: 0, color: "wheat" }}
-            transition={{ duration: 1, ease: "easeIn", delay: 1 }}
+            transition={{ duration: 1, ease: "easeIn", delay: 2 }}
             
           >
             <Typewriter
