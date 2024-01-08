@@ -62,6 +62,7 @@ const resources = {
       "personalInfo.phoneValue": "+91 9011793540",
       "personalInfo.freelance": "Freelance",
       "personalInfo.freelanceValue": "Available",
+      "Explore":"Explore"
     },
   },
 
@@ -126,7 +127,9 @@ const resources = {
       "personalInfo.phoneValue": "+91 9011793540",
       "personalInfo.freelance": "Freelance",
       "personalInfo.freelanceValue": "Available",
-      "Your satisfaction is my satisfaction":"Din tilfredshet er min tilfredshet"
+      "Your satisfaction is my satisfaction":"Din tilfredshet er min tilfredshet",
+      "Hire me":"Ansette meg",
+      "Explore":"Utforske"
       
     },
   },
@@ -174,7 +177,6 @@ const resources = {
       "aboutMe.letsCollaborate": "आइए सहयोग करें",
       "aboutMe.dynamicReality":
         "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!",
-
       "personalInfo.title": "व्यक्तिगत जानकारी",
       "personalInfo.name": "नाम",
       "personalInfo.nameValue": "शांतनु चव्हाण",
@@ -204,7 +206,7 @@ const resources = {
       blog: "ब्लॉग",
       Heyy: "हाय",
       "Thank you for comming": "आभारी आहे की आपण आलात",
-      "I am full Stack Web Developer": "माझं पूर्ण स्टॅक वेब डेव्हलपर आहे",
+      "I am full Stack Web Developer": "मी पूर्ण  वेब स्टॅक डेव्हलपर आहे",
       all: "सर्व",
       webapps: "वेब अॅप्लिकेशन्स",
       dashboards: "डॅशबोर्ड्स",
@@ -255,7 +257,7 @@ const resources = {
       "Your satisfaction is my satisfaction":"तुझे समाधान हेच ​​माझे समाधान"
     },
   },
-  // Add more languages and translations as needed
+  
 };
 
 i18n.use(initReactI18next).init({
