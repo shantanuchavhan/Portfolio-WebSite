@@ -126,8 +126,8 @@ const resources = {
       "personalInfo.phoneValue": "+91 9011793540",
       "personalInfo.freelance": "Freelance",
       "personalInfo.freelanceValue": "Available",
-
-      // ... other Norwegian translations
+      "Your satisfaction is my satisfaction":"Din tilfredshet er min tilfredshet"
+      
     },
   },
   hi: {
@@ -190,6 +190,7 @@ const resources = {
       "personalInfo.phoneValue": "+91 9011793540",
       "personalInfo.freelance": "फ्रीलांस",
       "personalInfo.freelanceValue": "उपलब्ध",
+      "Your satisfaction is my satisfaction":"आपकी संतुष्टि ही मेरी संतुष्टि है"
     },
   },
   mr: {
@@ -251,6 +252,7 @@ const resources = {
       "personalInfo.phoneValue": "+91 9011793540",
       "personalInfo.freelance": "स्वतंत्रपेंडिंग",
       "personalInfo.freelanceValue": "उपलब्ध",
+      "Your satisfaction is my satisfaction":"तुझे समाधान हेच ​​माझे समाधान"
     },
   },
   // Add more languages and translations as needed
