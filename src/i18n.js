@@ -240,7 +240,7 @@ const resources = {
         "तुमचे डिजिटल दृष्टिकोण एक गतिशील वास्तविकतेत परिणाम होईल!",
       "personalInfo.title": "वैयक्तिक माहिती",
       "personalInfo.name": "नाव",
-      "personalInfo.nameValue": "शांतनु चव्हाण",
+      "personalInfo.nameValue": "शंतनू चव्हाण",
       "personalInfo.age": "वय",
       "personalInfo.ageValue": "23 वर्षे",
       "personalInfo.residence": "निवासस्थान",
