@@ -88,7 +88,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ duration: 2, ease: "easeInOut", delay: 7 }}
           onClick={() => setIsOpen(true)}
-          className={`lg:hidden border border-blue-300 p-2`}
+          className={`lg:hidden border border-${color} p-2`}
         >
           {t("Explore")}
         </motion.h1>
