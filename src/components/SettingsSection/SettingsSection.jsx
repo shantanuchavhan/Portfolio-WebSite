@@ -11,19 +11,19 @@ const SettingsSection = ({ setColor }) => {
       <div className="flex gap-3">
         <div
           className="bg-green-300 h-4 w-4"
-          onClick={() => setColor("bg-green-300")}
+          onClick={() => setColor("green-300")}
         ></div>
         <div
           className="bg-yellow-300 h-4 w-4"
-          onClick={() => setColor("bg-yellow-300")}
+          onClick={() => setColor("yellow-300")}
         ></div>
         <div
           className="bg-red-300 h-4 w-4"
-          onClick={() => setColor("bg-red-300")}
+          onClick={() => setColor("red-300")}
         ></div>
         <div
           className="bg-blue-300 h-4 w-4"
-          onClick={() => setColor("bg-blue-300")}
+          onClick={() => setColor("blue-300")}
         ></div>
       </div>
       <h4>{t("choose language")}</h4>
