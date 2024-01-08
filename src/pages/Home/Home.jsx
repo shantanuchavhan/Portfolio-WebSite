@@ -80,7 +80,7 @@ const Home = () => {
             transition={{ duration: 2, ease: "easeInOut", delay: 6 }}
             className={`border border-blue-300 p-2`}
           >
-            Hire me
+            {t("Hire me")}
           </motion.h1>
         </Link>
         <motion.h1
@@ -90,7 +90,7 @@ const Home = () => {
           onClick={() => setIsOpen(true)}
           className={`lg:hidden border border-blue-300 p-2`}
         >
-          Explore
+          {t("Explore")}
         </motion.h1>
       </div>
       <div className="fixed z-[-3] top-0 left-0 w-full h-screen ">
