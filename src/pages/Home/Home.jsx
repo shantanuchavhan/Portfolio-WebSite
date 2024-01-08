@@ -70,7 +70,7 @@ const Home = () => {
           transition={{ duration: 2, ease: "easeIn", delay: 5 }}
           className="text-center"
         >
-          <h1>Your satisfaction is my satisfaction.</h1>
+          <h1>{t("Your satisfaction is my satisfaction")}.</h1>
         </motion.div>
 
         <Link to={"/contact"}>
