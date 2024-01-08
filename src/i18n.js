@@ -192,7 +192,8 @@ const resources = {
       "personalInfo.freelance": "फ्रीलांस",
       "personalInfo.freelanceValue": "उपलब्ध",
       "Your satisfaction is my satisfaction":"आपकी संतुष्टि ही मेरी संतुष्टि है",
-      "Explore":"अन्वेषण करना"
+      "Explore":"अन्वेषण करना",
+      "Hire me":"मुझे चुनिएँ",
     },
   },
   mr: {
@@ -254,7 +255,8 @@ const resources = {
       "personalInfo.freelance": "स्वतंत्रपेंडिंग",
       "personalInfo.freelanceValue": "उपलब्ध",
       "Your satisfaction is my satisfaction":"तुझे समाधान हेच ​​माझे समाधान",
-      "Explore":"एक्सप्लोर करा"
+      "Explore":"एक्सप्लोर करा",
+      "Hire me":"मला कामाला ठेवा",
     },
   },
   
