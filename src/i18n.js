@@ -90,27 +90,26 @@ const resources = {
       Subject: "Emne",
       "Send message": "Sende melding",
       "Let us know how we can help you":
-        "Fortell oss hvordan vi kan hjelpe deg",
+      "Fortell oss hvordan vi kan hjelpe deg",
       "Leave a comment": "Legg igjen en kommentar",
       "aboutMe.title": "Om meg",
       "aboutMe.fullStackDeveloper": "Full Stack Web Developer",
       "aboutMe.greetings": "Hei!",
       "aboutMe.specializingIn":
-        "Jeg er en dyktig Full Stack Web Developer som spesialiserer meg i",
+      "Jeg er en dyktig Full Stack Web Developer som spesialiserer meg i",
       "aboutMe.technologies":
-        "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
+      "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
       "aboutMe.passionForCrafting":
-        "Med lidenskap for å skape sømløse digitale opplevelser, utmerker jeg meg i",
+      "Med lidenskap for å skape sømløse digitale opplevelser, utmerker jeg meg i",
       "aboutMe.replicatingDesigns":
-        "replikere intrikate design og optimalisere løsninger.",
+      "replikere intrikate design og optimalisere løsninger.",
       "aboutMe.focusOnCreating":
-        "Fokuset mitt er å lage piksel-perfekte, responsivt grensesnitt for alle enheter.",
+      "Fokuset mitt er å lage piksel-perfekte, responsivt grensesnitt for alle enheter.",
       "aboutMe.embracingApproach":
-        "Ved å omfavne en komponentbasert og systematisk tilnærming, sørger jeg for at design ikke bare replikeres trofast, men også optimaliseres for effektivitet.",
+      "Ved å omfavne en komponentbasert og systematisk tilnærming, sørger jeg for at design ikke bare replikeres trofast, men også optimaliseres for effektivitet.",
       "aboutMe.letsCollaborate": "La oss samarbeide",
       "aboutMe.dynamicReality":
-        "for å gjøre din digitale visjon til virkelighet!",
-
+      "for å gjøre din digitale visjon til virkelighet!",
       "personalInfo.title": "Personal information",
       "personalInfo.name": "Name",
       "personalInfo.nameValue": "Shantanu Chavhan",
@@ -120,7 +119,7 @@ const resources = {
       "personalInfo.residenceValue": "Mumbai, Maharashtra",
       "personalInfo.address": "Address",
       "personalInfo.addressValue":
-        "Mahavir Paradise Phase-3, Forest Naka, Ambernath",
+      "Mahavir Paradise Phase-3, Forest Naka, Ambernath",
       "personalInfo.email": "Email",
       "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
       "personalInfo.phone": "Phone",
@@ -157,26 +156,26 @@ const resources = {
       "Your message": "आपका संदेश",
       "Send message": "मेसेज भेजें",
       "Let us know how we can help you":
-        "हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं",
+      "हमें बताएं कि हम आपकी सहायता कैसे कर सकते हैं",
       "Leave a comment": "एक टिप्पणी छोड़ें",
       "aboutMe.title": "मेरे बारे में",
       "aboutMe.fullStackDeveloper": "पूर्ण स्टैक वेब डेवेलपर",
       "aboutMe.greetings": "नमस्कार!",
       "aboutMe.specializingIn":
-        "मैं एक कुशल पूर्ण स्टैक वेब डेवेलपर हूं जो इसमें विशेषज्ञ है",
+      "मैं एक कुशल पूर्ण स्टैक वेब डेवेलपर हूं जो इसमें विशेषज्ञ है",
       "aboutMe.technologies":
-        "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
+      "React, Express.js, Next.js, Tailwind, CSS, MongoDB, SQL, Node.js.",
       "aboutMe.passionForCrafting":
-        "सीमित डिजिटल अनुभवों को बनाने के लिए जोश के साथ, मैं उत्कृष्ट हूं",
+      "सीमित डिजिटल अनुभवों को बनाने के लिए जोश के साथ, मैं उत्कृष्ट हूं",
       "aboutMe.replicatingDesigns":
-        "जटिल डिजाइन की पुनरावृत्ति और समाधानों को अनुकूलित करना।",
+      "जटिल डिजाइन की पुनरावृत्ति और समाधानों को अनुकूलित करना।",
       "aboutMe.focusOnCreating":
-        "मेरा ध्यान पिक्सेल-सही, सभी उपकरण प्रतिसादी इंटरफेस बनाने पर है।",
+      "मेरा ध्यान पिक्सेल-सही, सभी उपकरण प्रतिसादी इंटरफेस बनाने पर है।",
       "aboutMe.embracingApproach":
-        "एक घटक-आधारित और व्यवस्थित दृष्टिकोण को अपनाकर, मैं सुनिश्चित करता हूं कि डिजाइन को सिर्फ विश्वासपूर्वक पुनरावृत्ति किया जाता है बल्कि यह कुशलता के लिए भी अनुकूलित किया जाता है।",
+      "एक घटक-आधारित और व्यवस्थित दृष्टिकोण को अपनाकर, मैं सुनिश्चित करता हूं कि डिजाइन को सिर्फ विश्वासपूर्वक पुनरावृत्ति किया जाता है बल्कि यह कुशलता के लिए भी अनुकूलित किया जाता है।",
       "aboutMe.letsCollaborate": "आइए सहयोग करें",
       "aboutMe.dynamicReality":
-        "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!",
+      "ताकि आपका डिजिटल दृष्टिकोण एक गतिशील वास्तविकता में परिणाम हो!",
       "personalInfo.title": "व्यक्तिगत जानकारी",
       "personalInfo.name": "नाम",
       "personalInfo.nameValue": "शांतनु चव्हाण",
@@ -238,7 +237,6 @@ const resources = {
         "आपल्याला सहयोग कसे करू शकतो हे आपल्याला सांगा",
       "aboutMe.dynamicReality":
         "तुमचे डिजिटल दृष्टिकोण एक गतिशील वास्तविकतेत परिणाम होईल!",
-
       "personalInfo.title": "वैयक्तिक माहिती",
       "personalInfo.name": "नाव",
       "personalInfo.nameValue": "शांतनु चव्हाण",
