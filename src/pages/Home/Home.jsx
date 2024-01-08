@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const { t } = useTranslation();
   const {color}=useSettingsContext()
-  console.log(`border-${color}`,"color")
+  const border=`border-${color}`
   const dilogues = [
     t("Heyy"),
     t("Thank you for comming"),
@@ -78,7 +78,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 100, color: "white" }}
             animate={{ opacity: 1, y: 0, color: "white" }}
             transition={{ duration: 2, ease: "easeInOut", delay: 6 }}
-            className={`border border-blue-300 p-2`}
+            className={`border ${border} p-2`}
           >
             {t("Hire me")}
           </motion.h1>
