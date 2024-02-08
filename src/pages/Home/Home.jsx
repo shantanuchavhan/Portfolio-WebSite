@@ -224,24 +224,24 @@ const Home = () => {
           className={`p-4  rounded-[20px] `}
         >
           <h1 className="p-3 text-[30px]">Services</h1>
-          <div className="grid md:grid-cols-3 gap-3 grid-cols-2 font-dancing-script  ">
+          <div className="grid md:grid-cols-3 gap-3 grid-cols-2 font-Roboto  ">
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Web Apps</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Web Apps</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Dashboards</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Dashboards</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Landing Pages</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Landing Pages</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Responsive Ui</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Responsive Ui</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Deployement</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Deployement</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
-                  <h1 className="text-black text-[26px] font-bold">Cloud Services</h1>
+                  <h1 className="text-black text-[20px] md:text-[22px] font-bold">Cloud Services</h1>
                 </div>
               
           </div>
