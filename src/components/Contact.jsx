@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Contact = () => {
   const [section, setSection] = useState('email')
   return (
-    <div className="w-full flex flex-col gap-10">
+    <div className="w-full flex flex-col gap-3">
       <h1 className=" text-[18px] md:text-[32px] italic font-semibold">
          Contact me
       </h1>
