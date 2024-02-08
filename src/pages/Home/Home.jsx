@@ -17,7 +17,7 @@ import skillh from "../../images/icons8-stack-48.png"
 import skilli from "../../images/icons8-sql-60.png"
 import skillj from "../../images/icons8-git-50.png"
 
-import airbnb from "../../images/airbnb.png"
+// import airbnb from "../../images/airbnb.png"
 import foodeat from "../../images/foodeat.png"
 import ecommerseapp from "../../images/ecommerseclothx.png"
 import dashboard from "../../images/dashboard.png"
