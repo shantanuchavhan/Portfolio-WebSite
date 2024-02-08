@@ -114,7 +114,7 @@ const Home = () => {
       <motion.div
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
-          transition={{ duration: 1, ease: "easeInOut", delay: 5 }}
+          transition={{ duration: 1, ease: "easeInOut", delay: 6 }}
           onClick={() => setIsOpen(true)}
           className={`bg-white p-2 text-center rounded-[20px] -mt-44 flex flex-col`}
         >
