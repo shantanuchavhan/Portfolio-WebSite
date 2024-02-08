@@ -118,7 +118,7 @@ const Home = () => {
           className={`bg-white p-2 text-center rounded-[20px] -mt-44 flex flex-col`}
         >
           <h1 className="text-black text-[24px] italic">Skills</h1>
-          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 p-4 text-black ">
+          <div className="grid grid-cols-4 md:grid-cols-6 lg:flex gap-4 p-4 text-black ">
 
           <div>
               <img src={skilla} className="h-14 w-14" alt="" />
