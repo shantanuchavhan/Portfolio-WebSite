@@ -180,7 +180,7 @@ const Home = () => {
           <div className="grid  md:grid-cols-2 gap-3 grid-cols-1">
   <a href="https://github.com/shantanuchavhan/airbnbclient.git" target="_blank" rel="noreferrer" className="border border-white p-2 text-red-300">
     <div className="h-[200px] w-[350px] bg-white">
-      <img className="h-full w-full object-fit-cover" src={airbnb} alt="" />
+      <img className="h-full w-full object-fit-cover" src="https://res.cloudinary.com/ddw1upvx3/image/upload/v1704445012/dgpbdblxl4obwvffzloa.png" alt="" />
     </div>
   </a>
   
