@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 const Contact = () => {
   const [section, setSection] = useState('email')
   return (
-    <div className="  flex flex-col gap-10">
+    <div className="w-full flex flex-col gap-10">
       <h1 className=" text-[18px] md:text-[32px] italic font-semibold">
          Contact me
       </h1>
-      <div>
+      <div className='bg-white text-black'>
         <div className="border flex justify-between  items-center h-[40px]  bg-gray-800 text-white border border-black">
           <div
             className={`${section === 'email' ? 'bg-gray-700 border-black' : ''}  border-x flex justify-center  items-center   h-full w-full cursor-pointer`}

@@ -238,7 +238,7 @@ const Home = () => {
                 <div className="h-[100px] w-[130px] md:h-[100px] md:w-[200px] bg-white rounded-[20px] flex items-center justify-center">
                   <h1 className="text-black  font-bold">Responsive Ui</h1>
                 </div>
-                <div className="h-[100px] w-[130px] md:h-[100px] md:w-[300px] bg-white rounded-[20px] flex items-center justify-center">
+                <div className="h-[100px] w-[130px] md:h-[100px] md:w-[200px] bg-white rounded-[20px] flex items-center justify-center">
                   <h1 className="text-black  font-bold">Deployement</h1>
                 </div>
                 <div className="h-[100px] w-[130px] md:h-[100px] md:w-[200px] bg-white rounded-[20px] flex items-center justify-center">
@@ -247,8 +247,18 @@ const Home = () => {
               
           </div>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 100, color: "white" }}
+          animate={{ opacity: 1, y: 0, color: "white" }}
+          transition={{ duration: 2, ease: "easeInOut", delay: 7 }}
+          onClick={() => setIsOpen(true)}
+          className={`w-full px-48`}
+        >
+          <Contact/>
+        </motion.div>
         
-        <Contact/>
+        
 
         <Link to={"/contact"}>
           <motion.h1
