@@ -224,7 +224,7 @@ const Home = () => {
           className={`p-4  rounded-[20px] `}
         >
           <h1 className="p-3 text-[30px]">Services</h1>
-          <div className="grid md:grid-cols-3 gap-3 grid-cols-2 font-dancing-script  ">
+          <div className="grid md:grid-cols-3 gap-2 md:gap-3 grid-cols-2 font-dancing-script  ">
                 <div className="h-[100px] w-[200px] bg-white rounded-[20px] flex items-center justify-center">
                   <h1 className="text-black text-[26px] font-bold">Web Apps</h1>
                 </div>
