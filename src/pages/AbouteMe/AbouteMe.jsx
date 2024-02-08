@@ -44,12 +44,7 @@ const AbouteMe = () => {
                 {t("personalInfo.residenceValue")}
               </h3>
             </div>
-            <div className="flex gap-2">
-              <h1>{t("personalInfo.address")}:</h1>
-              <h3 className="text-gray-400">
-                {t("personalInfo.addressValue")}
-              </h3>
-            </div>
+          
             <div className="flex gap-2">
               <h1>{t("personalInfo.email")}:</h1>
               <h3 className="text-gray-400">{t("personalInfo.emailValue")}</h3>

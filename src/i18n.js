@@ -184,7 +184,6 @@ const resources = {
       "personalInfo.residence": "निवास",
       "personalInfo.residenceValue": "मुंबई, महाराष्ट्र",
       "personalInfo.address": "पता",
-      "personalInfo.addressValue": "महावीर पैराडाइस फेज-3, वन नाका, अंबरनाथ",
       "personalInfo.email": "ईमेल",
       "personalInfo.emailValue": "Shantanuchavhan002@gmail.com",
       "personalInfo.phone": "फ़ोन",

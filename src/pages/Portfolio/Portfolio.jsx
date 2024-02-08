@@ -5,54 +5,79 @@ import { motion } from "framer-motion";
 import style from "./style.module.css";
 import { useSettingsContext } from "../../context/SettingsProvider";
 import ReactLoading from "react-loading";
-import img from "../../images/error.jpg";
+
 import { useTranslation } from "react-i18next";
+import projectData from "../../projectData";
 const Portfolio = () => {
   const [active, setActive] = useState("all");
   const [projects, setProjects] = useState([]);
   const { color } = useSettingsContext();
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const sections = ["all", "webapps", "dashboards", "landingpage"];
+  // useEffect(() => {
+  //   // Fetch projects based on the selected section
+  //   const fetchProjects = async () => {
+  //     setLoading((old) => true);
+  //     try {
+  //       if (active === "all") {
+  //         const response = await fetch(
+  //           `https://myportfolio-t7n4.onrender.com/projects/?language=${i18n.language}`,
+  //         );
+  //         getResponse(response);
+  //       } else {
+  //         const response = await fetch(
+  //           `https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/?language=${
+  //             i18n.language
+  //           }`,
+  //         );
+  //         getResponse(response);
+  //       }
+
+  //       async function getResponse(response) {
+  //         if (response.ok) {
+  //           const data = await response.json();
+  //           setProjects(data);
+  //           setLoading((old) => false);
+  //         } else {
+  //           setError(true);
+  //           console.error("Failed to fetch projects");
+  //         }
+  //       }
+  //     } catch (error) {
+  //       console.error("Error fetching projects", error);
+  //     }
+  //   };
+
+  //   fetchProjects();
+  // }, [active, i18n.language]);
+
+ 
 
   useEffect(() => {
-    // Fetch projects based on the selected section
-    const fetchProjects = async () => {
-      setLoading((old) => true);
-      try {
-        if (active === "all") {
-          const response = await fetch(
-            `https://myportfolio-t7n4.onrender.com/projects/?language=${i18n.language}`,
-          );
-          getResponse(response);
-        } else {
-          const response = await fetch(
-            `https://myportfolio-t7n4.onrender.com/projects/${active.toLowerCase()}/?language=${
-              i18n.language
-            }`,
-          );
-          getResponse(response);
-        }
+    setLoading(true);
+  
+    // Assuming 'category' is the property in each project object
+    const filteredProjects = projectData.filter(project => project.category === active);
+  
+    if(active==="all"){
+      setProjects(projectData);
+    }else{
+      setProjects(filteredProjects);
+    }
+    setLoading(false);
+  
+  }, [active]);
 
-        async function getResponse(response) {
-          if (response.ok) {
-            const data = await response.json();
-            setProjects(data);
-            setLoading((old) => false);
-          } else {
-            setError(true);
-            console.error("Failed to fetch projects");
-          }
-        }
-      } catch (error) {
-        console.error("Error fetching projects", error);
-      }
-    };
+  useEffect(() => {
+    setLoading((old)=>true);
+    setProjects(old=>projectData)
+    setLoading((old) => false);
 
-    fetchProjects();
-  }, [active, i18n.language]);
+  }, []);
+  
 
-  const sections = ["all", "webapps", "dashboards", "landingpage"];
+  
 
   return (
     <AnimatedSection Icon={Icon} sectionName={"portfolio"}>
@@ -86,7 +111,7 @@ const Portfolio = () => {
             className=""
           >
             <h3>
-              {t("Total Projects")}):-{projects.length}
+              {t("Total Projects")}:-{projects.length}
             </h3>
           </motion.div>
           {/* Display projects */}
@@ -98,30 +123,30 @@ const Portfolio = () => {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="flex flex-col gap-6"
               >
-                {projects.map((project) => (
+                {projects.map((project,index) => (
                   <li
-                    className=" lg:flex lg:items-start lg:gap-6"
-                    key={project.id}
+                    className=" lg:flex lg:items-start lg:gap-6 flex items-center justify-center"
+                    key={index}
                   >
-                    <div className="lg:w-50">
+                    <div className="flex-1 lg:w-3/6 ">
                       <img
-                        src={`https://res.cloudinary.com/ddw1upvx3/${project.images}`}
+                        src={project.image}
                         alt=""
+                        className="w-[600px] w-full overflow-hidden object-fit-cover"
                       />
                     </div>
-                    <div>
-                      <h3>{project.title}</h3>
-                      <p>{project.description}</p>
+                    <div className="flex-1 w-60">
+                      <h3 className="-mt-1 text-[18px]">{project.projectName}</h3>
+                      <p className="text-gray-500">{project.description}</p>
                     </div>
+                    <a href={project.projectLink} target="_blank" rel="noreferrer" className="border border-white p-2 rounded-lg ">
+                      View
+                    </a>
                   </li>
+
                 ))}
               </motion.ul>
-            ) : error ? (
-              <div className="flex items-center justify-center h-full pt-6">
-                <h5>Oops something wrong!!</h5>
-                <img className="h-20 w-20" src={img} alt="" />
-              </div>
-            ) : (
+            ) :  (
               <div className="flex items-center justify-center h-full pt-6">
                 <div className="flex   gap-3">
                   <ReactLoading
