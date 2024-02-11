@@ -116,7 +116,6 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ duration: 1, ease: "easeInOut", delay: 6 }}
-          onClick={() => setIsOpen(true)}
           className={`bg-white p-2 text-center rounded-[20px] -mt-44 flex flex-col`}
         >
           <h1 className="text-black text-[24px] italic">Skills</h1>
@@ -175,7 +174,6 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ duration: 1, ease: "easeInOut", delay: 6 }}
-          onClick={() => setIsOpen(true)}
           className={`p-4  rounded-[20px]`}
         >
           <h1 className="p-3 text-[30px]">Projects</h1>
@@ -222,7 +220,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ duration: 1, ease: "easeInOut", delay: 7 }}
-          onClick={() => setIsOpen(true)}
+          
           className={`p-4  rounded-[20px] `}
         >
           <h1 className="p-3 text-[30px]">Services</h1>
