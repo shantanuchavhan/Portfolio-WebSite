@@ -251,7 +251,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 100, color: "white" }}
           animate={{ opacity: 1, y: 0, color: "white" }}
           transition={{ duration: 2, ease: "easeInOut", delay: 7 }}
-          onClick={() => setIsOpen(true)}
+          
           className={`w-full px-48`}
         >
           <Contact/>
