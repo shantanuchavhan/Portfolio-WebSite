@@ -226,22 +226,22 @@ const Home = () => {
           <h1 className="p-3 text-[30px]">Services</h1>
           <div className="grid md:grid-cols-3 gap-3 grid-cols-2 font-Roboto text-[16px] md:text-[18px] ">
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px] ">
-                  <h1 className="text-white  font-bold">Web Apps</h1>
+                  <h1 className="text-black  font-bold">Web Apps</h1>
                 </div>
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px]">
-                  <h1 className="text-white font-bold">Dashboards</h1>
+                  <h1 className="text-black font-bold">Dashboards</h1>
                 </div>
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px]">
-                  <h1 className="text-white font-bold">Landing Pages</h1>
+                  <h1 className="text-black font-bold">Landing Pages</h1>
                 </div>
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px]">
-                  <h1 className="text-white font-bold">Responsive Ui</h1>
+                  <h1 className="text-black font-bold">Responsive Ui</h1>
                 </div>
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px]">
-                  <h1 className="text-white  font-bold">Deployement</h1>
+                  <h1 className="text-black  font-bold">Deployement</h1>
                 </div>
                 <div className="neon__card h-[100px] w-[130px] md:h-[100px] md:w-[200px]">
-                  <h1 className="text-white  font-bold">Cloud Services</h1>
+                  <h1 className="text-black  font-bold">Cloud Services</h1>
                 </div>
               
           </div>
