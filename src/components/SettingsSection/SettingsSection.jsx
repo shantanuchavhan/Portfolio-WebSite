@@ -33,7 +33,6 @@ const SettingsSection = ({ setColor }) => {
           value={i18n.language}
         >
           <option value="en">English</option>
-          <option value="no">Norwegian</option>
           <option value="mr">Marathi</option>
         </select>
       </div>
